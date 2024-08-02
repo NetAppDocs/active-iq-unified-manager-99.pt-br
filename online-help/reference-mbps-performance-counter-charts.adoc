@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-mbps-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Os gráficos de contador MB/s exibem o número de megabytes de dados transferidos para e a partir do objeto selecionado por segundo. 
+---
+= Gráficos de contadores de desempenho MB/s.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os gráficos de contador MB/s exibem o número de megabytes de dados transferidos para e a partir do objeto selecionado por segundo.
+
+A janela pop-up que é exibida quando o cursor está na área do gráfico mostra os valores específicos do contador em momentos específicos.
+
+Quando exibidos na visualização Zoom, os gráficos de volume e LUN também exibem as configurações de limite máximo de taxa de transferência de MB/s de qualidade do serviço (QoS), se configurados.
+
+Ao exibir um volume ou LUN que está compartilhando os MB/s de uma política de QoS compartilhada, uma linha para "'Total de carga de trabalho MB/s" é exibida para mostrar os MB/s que estão sendo usados por todas as outras cargas de trabalho que compartilham essa política.
+
+A parte inferior da página do gráfico exibe informações sobre os MB/s mínimo, máximo, média e percentil 95th para o intervalo de tempo selecionado.
+
+Existem dois tipos de gráficos MB/s disponíveis:
+
+
+
+== MB/s - Gráfico de contador total
+
+Exibe o número de megabytes de dados transferidos para e do objeto selecionado por segundo.
+
+
+
+== MB/s - Gráfico do contador de avarias
+
+Exibe os mesmos dados MB/s separados em leitura de disco, leitura de Flash Cache, gravação e outras operações.
+
+Essa opção de gráfico se aplica quando o objeto selecionado é SVM, nó, agregado, volume ou LUN.
+
+[NOTE]
+====
+Os dados do Flash Cache são exibidos somente para nós e somente quando um módulo Flash Cache é instalado no nó.
+
+====
+
+
+== *Botão Zoom View*
+
+Apresenta uma vista ampliada dos dados da carta de contador.
+
+* Eventos
++
+A ocorrência de eventos críticos, de erro, de aviso e informativos é indicada nas linhas de tempo acima dos gráficos.
+
+* Limites
++
+A linha horizontal tracejada indica o valor limite de aviso de utilização definido no Unified Manager.
+
++
+A linha vermelha contínua indica o valor de limite crítico de utilização definido no Unified Manager.
+
+* Contadores
++
+Os contadores no painel esquerdo mostram quais valores de contador estão sendo exibidos. Desmarcar ou selecionar o image:../media/eye-icon.gif[""] que está associado a um contador oculta e mostra as informações do contador do gráfico e pode ajudar na comparação de MB/s. do objeto
+
+

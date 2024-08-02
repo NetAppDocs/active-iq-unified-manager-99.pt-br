@@ -1,0 +1,132 @@
+---
+permalink: online-help/reference-smb-cifs-shares-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na exibição Saúde: Todos os compartilhamentos SMB e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= SMB/CIFS compartilha campos de integridade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na exibição Saúde: Todos os compartilhamentos SMB e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Botão View User Mapping*
++
+Inicia a caixa de diálogo Mapeamento de usuários.
+
++
+Você pode exibir os detalhes do mapeamento de usuários para o SVM.
+
+* *Exibir botão ACL*
++
+Inicia a caixa de diálogo Controle de Acesso para o compartilhamento.
+
++
+Você pode exibir os detalhes do usuário e da permissão para o compartilhamento selecionado.
+
+* *Status*
++
+Apresenta o estado atual da partilha. O status pode ser normal (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"] ) ou erro (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"]).
+
+* *Nome*
++
+Exibe o nome do compartilhamento CIFS.
+
+* *Caminho*
++
+Apresenta o caminho de junção no qual a partilha é criada.
+
+* *Qtree*
++
+Exibe o nome da qtree à qual o compartilhamento CIFS é aplicado.
+
+* *Volume*
++
+Exibe o nome do volume ao qual o compartilhamento CIFS é aplicado.
+
+* *Estado do volume*
++
+Exibe o estado do volume que está sendo exportado. O estado pode ser Offline, Online, restrito, Misto ou desconhecido.
+
++
+** Offline
++
+O acesso de leitura ou gravação ao volume não é permitido.
+
+** Online
++
+O acesso de leitura e gravação ao volume é permitido.
+
+** Restrito
++
+Operações limitadas, como reconstrução de paridade, são permitidas, mas o acesso aos dados não é permitido.
+
+** Misto
++
+Os constituintes de um volume FlexGroup não estão todos no mesmo estado.
+
+
+
+* *Propriedades*
++
+Liste as propriedades opcionais definidas quando o compartilhamento foi criado.
+
+* *Usuário*
++
+Os usuários que podem acessar o compartilhamento.
+
+* *Permissão*
++
+As permissões que os usuários têm no compartilhamento.
+
+* *Estilo de segurança*
++
+Exibe a permissão de acesso para os volumes compartilhados. O estilo de segurança pode ser UNIX, Unified, NTFS ou Misto.
+
++
+** UNIX (clientes NFS)
++
+Arquivos e diretórios no volume têm permissões UNIX.
+
+** Unificado
++
+Os arquivos e diretórios no volume têm um estilo de segurança unificado.
+
+** NTFS (clientes CIFS)
++
+Os arquivos e diretórios no volume têm permissões do Windows NTFS.
+
+** Misto
++
+Arquivos e diretórios no volume podem ter permissões UNIX ou permissões Windows NTFS.
+
+
+
+* *Política de exportação*
++
+Exibe o nome da política de exportação aplicável ao compartilhamento. Se uma política de exportação não for especificada para o SVM, o valor será exibido como não ativado.
+
+* *Caminho de montagem ativo*
++
+Exibe se o caminho para acessar o compartilhamento está ativo ou inativo.
+
+* *Equivalente NFS*
++
+Especifica se existe um equivalente NFS para o compartilhamento.
+
+* *Storage VM*
++
+Exibe o nome do SVM ao qual o compartilhamento CIFS pertence.
+
+* *Cluster*
++
+Exibe o nome do cluster.
+
+* *Cluster FQDN*
++
+Exibe o nome de domínio totalmente qualificado (FQDN) do cluster.
+
+

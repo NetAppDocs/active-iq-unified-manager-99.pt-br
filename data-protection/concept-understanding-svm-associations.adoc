@@ -1,0 +1,32 @@
+---
+permalink: data-protection/concept-understanding-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Os pares de VM de storage são mapeamentos de uma VM de armazenamento de origem para uma VM de armazenamento de destino usados por aplicativos parceiros para seleção de recursos e provisionamento de volume secundário. 
+---
+= Noções básicas de Storage VM peers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os pares de VM de storage são mapeamentos de uma VM de armazenamento de origem para uma VM de armazenamento de destino usados por aplicativos parceiros para seleção de recursos e provisionamento de volume secundário.
+
+Os pares sempre são criados entre uma VM de storage de origem e uma VM de storage de destino, independentemente de a VM de storage de destino ser um destino secundário ou um destino terciário. Você não pode usar uma VM de armazenamento de destino secundário como fonte para criar um ponto com uma VM de armazenamento de destino terciário.
+
+Você pode fazer um peer de uma VM de storage de três maneiras:
+
+* Faça peer em qualquer VM de storage
++
+Você pode criar um ponto entre qualquer VM de armazenamento de origem primária e uma ou mais VM de armazenamento de destino. Isso significa que todas as VMs de storage existentes que atualmente exigem proteção, bem como quaisquer VMs de storage criadas no futuro, são direcionadas à VM de storage de destino especificado. Por exemplo, você pode querer que aplicativos de várias fontes diferentes em locais diferentes sejam copiados para uma ou mais VM de armazenamento de destino em um local.
+
+* Faça um peer em uma VM de storage específica
++
+Você pode criar um ponto entre uma VM de armazenamento de origem específica e uma ou mais VM de armazenamento de destino específico. Por exemplo, se você estiver fornecendo serviços de armazenamento para muitos clientes cujos dados devem ser separados um do outro, você pode escolher essa opção para associar uma VM de armazenamento de origem específica a uma VM de armazenamento de destino específica atribuída apenas a esse cliente.
+
+* Faça um peer com uma VM de armazenamento externo
++
+Você pode criar um ponto entre uma VM de armazenamento de origem e um volume flexível externo de uma VM de armazenamento de destino.
+
+

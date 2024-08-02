@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-lif-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na exibição desempenho: Todas as interfaces de rede e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= Campos de desempenho da interface de rede
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na exibição desempenho: Todas as interfaces de rede e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Status*
++
+Um objeto saudável sem eventos ativos exibe um ícone de marca de seleção verde (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]). Se o objeto tiver um evento ativo, o ícone do indicador de evento identifica a gravidade do evento: Os eventos críticos são vermelhos (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"]), os eventos de erro são laranja (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ) e os eventos de aviso são amarelos (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"]).
+
+* *Interface de rede*
++
+Você pode clicar no nome da interface de rede (LIF) para navegar até a página de detalhes de desempenho desse LIF.
+
+* *Tipo*
++
+O tipo de interface: Rede (iSCSI, NFS, CIFS), FCP ou NVMe FC.
+
+* *Latência*
++
+O tempo médio de resposta para todas as solicitações de e/S, expresso em milissegundos por operação. A latência não é aplicável a LIFs NFS e LIFs CIFS e é exibida como N/A para esses tipos.
+
+* *IOPS*
++
+As operações de entrada/saída por segundo. O IOPS não é aplicável a LIFs NFS e LIFs CIFS e é exibido como N/A para esses tipos.
+
+* *MB/s*
++
+A taxa de transferência na interface, medida em megabytes por segundo.
+
+* *Cluster*
++
+O cluster ao qual a interface pertence. Você pode clicar no nome do cluster para navegar até a página de detalhes do cluster.
+
+* *Cluster FQDN*
++
+O nome de domínio totalmente qualificado (FQDN) do cluster.
+
+* *SVM*
++
+A máquina virtual de armazenamento à qual a interface pertence. Você pode clicar no nome do SVM para navegar até a página de detalhes do SVM.
+
+* *Localização da casa*
++
+A localização inicial da interface, exibida como nome do nó e nome da porta, separada por dois pontos (:). Se a localização for exibida com uma elipse (...), você pode posicionar o cursor sobre o nome da localização para exibir a localização completa.
+
+* *Localização atual*
++
+O local atual da interface, exibido como nome do nó e nome da porta, separado por dois pontos (:). Se a localização for exibida com uma elipse (...), você pode posicionar o cursor sobre o nome da localização para exibir a localização completa.
+
+* *Função*
++
+A função de interface: Dados, cluster, gerenciamento de nós ou Intercluster.
+
+* *Política de limite*
++
+A política de limite de performance definida pelo usuário, ou políticas, que estão ativas neste objeto de storage. Você pode posicionar o cursor sobre os nomes de políticas que contêm uma elipse (...) para exibir o nome completo da política ou a lista de nomes de políticas atribuídos. Os botões *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* permanecem desativados até selecionar um ou mais objetos clicando nas caixas de seleção localizadas à esquerda.
+
+

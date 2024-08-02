@@ -1,0 +1,101 @@
+---
+permalink: online-help/reference-qos-policy-group-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na página Performance: QoS Policy Groups (grupos de políticas de QoS) e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= Campos de Grupo de políticas de QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na página Performance: QoS Policy Groups (grupos de políticas de QoS) e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Grupo de políticas QoS*
++
+O nome do grupo de políticas QoS.
+
++
+Para políticas do NetApp Service Level Manager (NSLM) 1,3 que foram importadas para o Unified Manager 9,7 ou posterior, o nome exibido aqui inclui o nome do SVM e outras informações que não estão no nome quando o nível de Serviço de Performance foi definido no NSLM. Por exemplo, o nome NSLM_vs6_Performance_2_0" significa que essa é a política de PSL definida pelo sistema NSLM criada no SVM "'vs6" com uma latência esperada de "'2 ms/op".
+
+* *Cluster*
++
+O cluster ao qual pertence o grupo de políticas QoS. Você pode clicar no nome do cluster para navegar até a página de detalhes do cluster.
+
+* *Cluster FQDN*
++
+O nome de domínio totalmente qualificado (FQDN) do cluster.
+
+* *SVM*
++
+A máquina virtual de storage (SVM) a que pertence o grupo de políticas de QoS. Você pode clicar no nome do SVM para navegar até a página de detalhes do SVM.
+
++
+[NOTE]
+====
+Esse campo ficará em branco se a política de QoS tiver sido criada no Admin SVM, uma vez que esse tipo de SVM representa o cluster.
+
+====
+* * Taxa de transferência mínima*
++
+A taxa de transferência mínima, em IOPS, fornecida pelo grupo de políticas.
+
++
+Para políticas adaptáveis, esse é o IOPS mínimo esperado por TB alocado ao volume ou LUN, com base no tamanho alocado do objeto de storage.
+
+* * Taxa de transferência máxima*
++
+A taxa de transferência, em IOPS e/ou MB/s, que o grupo de políticas não deve exceder. Quando este campo está em branco significa que o máximo definido em ONTAP é infinito.
+
++
+Para políticas adaptativas, esse é o máximo (pico) de IOPS possível por TB alocado ao volume ou LUN, com base no tamanho _allocated_ do objeto de armazenamento ou no tamanho _used_ do objeto de armazenamento.
+
+* *IOPS mínimo absoluto*
++
+Para políticas adaptáveis, esse é o valor mínimo absoluto de IOPS usado como uma substituição quando o IOPS esperado é menor que esse valor.
+
+* * Tamanho do bloco*
++
+O tamanho do bloco especificado para a política adaptativa de QoS.
+
+* *Alocação mínima*
++
+Se "espaço alocado" ou "espaço usado" é usado para determinar o rendimento máximo (pico) IOPS.
+
+* *Latência esperada*
++
+A latência média esperada para operações de entrada/saída de storage.
+
+* *Compartilhada*
++
+Para políticas de QoS tradicionais, se os valores de taxa de transferência definidos no grupo de políticas são compartilhados entre vários objetos.
+
+* *Objetos associados*
++
+O número de workloads atribuídos ao grupo de políticas de QoS.
+
+
+
+Você pode clicar no botão expandir (image:../media/chevron-down.gif[""]) ao lado do Nome do Grupo de políticas de QoS para exibir mais detalhes sobre o grupo de políticas.
+
+* *Capacidade alocada*
++
+A quantidade de espaço que os objetos que estão no grupo de políticas de QoS estão usando atualmente.
+
+* *Objetos associados*
++
+Número de workloads atribuídos ao grupo de políticas de QoS, separados em volumes e LUNs.
+
++
+Você pode clicar no número para navegar para uma página que forneça mais detalhes sobre os volumes ou LUNs selecionados.
+
+* *Eventos*
++
+Se um objeto, ou objetos, que são atribuídos ao grupo de políticas de QoS causaram uma violação de política de QoS, o ícone do indicador de eventos identifica a gravidade do evento (crítico, erro ou aviso) e exibe uma mensagem de erro.
+
++
+Você pode clicar na mensagem para navegar até a página Eventos que é filtrada para mostrar os objetos envolvidos no evento.
+
+

@@ -1,0 +1,47 @@
+---
+section: install-vapp
+title: Instale o Unified Manager nos sistemas VMware vSphere
+entries:
+- title: Introdução ao Active IQ Unified Manager
+  url: "/install-vapp/concept-introduction-to-unified-manager.html"
+  entries:
+  - title: O que o servidor Unified Manager faz
+    url: "/install-vapp/concept-what-the-unified-manager-server-does.html"
+  - title: Descrição geral da sequência de instalação
+    url: "/install-vapp/concept-overview-of-the-installation-sequence-um.html"
+- title: Requisitos para instalar o Unified Manager
+  url: "/install-vapp/concept-requirements-for-installing-unified-manager.html"
+  entries:
+  - title: Requisitos de infraestrutura virtual e sistema de hardware
+    url: "/install-vapp/concept-virtual-infrastructure-or-hardware-system-requirements.html"
+  - title: Requisitos de software e instalação da VMware
+    url: "/install-vapp/reference-vmware-software-and-installation-requirements.html"
+  - title: Navegadores suportados
+    url: "/install-vapp/concept-browser-and-platform-requirements.html"
+  - title: Requisitos de protocolo e porta
+    url: "/install-vapp/reference-protocol-and-port-requirements.html"
+  - title: Completar a folha de trabalho
+    url: "/install-vapp/reference-completing-the-worksheet-um.html"
+- title: Instalação, atualização e remoção do software Unified Manager
+  url: "/install-vapp/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html"
+  entries:
+  - title: Visão geral do processo de implantação
+    url: "/install-vapp/concept-overview-of-the-deployment-process.html"
+  - title: Implantando o Unified Manager
+    url: "/install-vapp/task-deploying-unified-manager-vapp.html"
+    entries:
+    - title: Download do arquivo de instalação do Unified Manager
+      url: "/install-vapp/task-downloading-the-unified-manager-ova-file.html"
+    - title: Implantando o dispositivo virtual do Unified Manager
+      url: "/install-vapp/task-deploying-the-unified-manager-virtual-appliance-vapp.html"
+  - title: Atualizando o Unified Manager
+    url: "/install-vapp/task-upgrading-unified-manager-vapp.html"
+    entries:
+    - title: Download do arquivo de atualização do Unified Manager
+      url: "/install-vapp/task-downloading-the-unified-manager-iso-image-vapp.html"
+    - title: Atualizando o dispositivo virtual do Unified Manager
+      url: "/install-vapp/task-upgrading-the-unified-manager-virtual-appliance-vapp.html"
+  - title: Reiniciando a máquina virtual do Unified Manager
+    url: "/install-vapp/task-restarting-the-unified-manager-virtual-machine.html"
+  - title: Remoção do Unified Manager
+    url: "/install-vapp/task-removing-unified-manager-vapp.html"

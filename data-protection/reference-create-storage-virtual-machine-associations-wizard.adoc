@@ -1,0 +1,90 @@
+---
+permalink: data-protection/reference-create-storage-virtual-machine-associations-wizard.html 
+sidebar: sidebar 
+keywords:  
+summary: O assistente criar pares de máquinas virtuais de storage permite que você faça pares de VM de armazenamento de origem e destino para uso em relacionamentos de proteção SnapMirror e SnapVault. 
+---
+= Assistente de criação de Storage Virtual Machine Peers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O assistente criar pares de máquinas virtuais de storage permite que você faça pares de VM de armazenamento de origem e destino para uso em relacionamentos de proteção SnapMirror e SnapVault.
+
+
+
+== Selecione fonte
+
+O painel Selecionar origem permite selecionar a fonte, ou a principal, VM de armazenamento no ponto de armazenamento da VM.
+
+* * Qualquer *
++
+Permite criar um ponto entre qualquer fonte de VM de storage para um ou mais destinos ou uma VM de storage secundária. Isso significa que todas as VMs de storage existentes que atualmente exigem proteção, bem como quaisquer VMs de storage criadas no futuro, são direcionadas à VM de storage de destino especificado. Por exemplo, você pode querer que aplicativos de várias fontes diferentes em locais diferentes façam backup de uma ou mais VM de armazenamento de destino em um local.
+
+* *Single*
++
+Permite que você faça um peer de uma VM de armazenamento de origem específica com uma ou mais VM de armazenamento de destino. Por exemplo, se você estiver fornecendo serviços de armazenamento para muitos clientes cujos dados devem ser separados um do outro, escolha esta opção para associar uma fonte de VM de armazenamento específica a um destino de VM de armazenamento específico atribuído apenas a esse cliente.
+
+* *Nenhuma (externa)*
++
+Permite criar uma associação entre uma VM de storage de origem e um volume flexível externo de uma VM de storage de destino.
+
++
+** Storage Virtual Machine
++
+Lista os nomes da VM de armazenamento de origem disponível
+
+** Cluster
++
+Lista os clusters nos quais reside cada VM de storage
+
+
+
+* *Permitir esses tipos de relacionamentos*
++
+Permite selecionar o tipo de relacionamento para a associação:
+
++
+** SnapMirror
++
+Especifica um relacionamento SnapMirror como o tipo de peer. Selecionar esta opção permite a replicação de dados das fontes selecionadas para os destinos selecionados.
+
+** SnapVault
++
+Especifica um relacionamento SnapVault como o tipo de peer. Selecionar esta opção ativa cópias de segurança a partir dos locais principais selecionados para os locais secundários selecionados.
+
+
+
+
+
+
+
+== Selecione Destinos de proteção
+
+O painel Select Protection Destinations (Selecionar destinos de proteção) do assistente Create Storage Virtual Machine Peers (criar pares de máquinas virtuais de armazenamento) permite-lhe selecionar onde copiar ou replicar os dados. Você pode criar um peer em apenas uma VM de armazenamento de destino por cluster.
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Seguinte*
++
+Avança para a página seguinte no assistente.
+
+* * Voltar*
++
+Retorna à página anterior no assistente.
+
+* *Acabamento*
++
+Aplica suas seleções e cria a associação.
+
+* *Cancelar*
++
+Descarta as seleções e fecha o assistente criar pares de máquinas virtuais de armazenamento.
+
+

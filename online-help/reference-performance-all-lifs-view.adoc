@@ -1,0 +1,27 @@
+---
+permalink: online-help/reference-performance-all-lifs-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A exibição desempenho: Todas as interfaces de rede exibe uma visão geral dos eventos de desempenho, dados e informações de configuração para cada interface de rede (LIF) que está sendo monitorada por essa instância do Unified Manager. Esta página permite que você monitore rapidamente o desempenho de suas interfaces e solucione problemas de desempenho e eventos de limite.' 
+---
+= Desempenho: Visualização de todas as interfaces de rede
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A exibição desempenho: Todas as interfaces de rede exibe uma visão geral dos eventos de desempenho, dados e informações de configuração para cada interface de rede (LIF) que está sendo monitorada por essa instância do Unified Manager. Esta página permite que você monitore rapidamente o desempenho de suas interfaces e solucione problemas de desempenho e eventos de limite.
+
+Por padrão, os objetos nas páginas de visualização são classificados com base na criticidade do evento. Os objetos com eventos críticos são listados primeiro e os objetos com eventos de aviso são listados em segundo lugar. Isso fornece uma indicação visual imediata dos problemas que devem ser resolvidos.
+
+Os controles ao longo da parte superior da página permitem selecionar uma exibição específica (para integridade, desempenho, capacidade e assim por diante), realizar pesquisas para localizar objetos específicos, criar e aplicar filtros para restringir a lista de dados exibidos, adicionar/remover/reordenar colunas na página e exportar os dados na página para um `.csv` arquivo , ou `.xlsx` . `.pdf` Depois de personalizar a página, você pode salvar os resultados como uma visualização personalizada e, em seguida, agendar um relatório desses dados para ser gerado e enviado por e-mail regularmente.
+
+Você pode atribuir políticas de limite de desempenho ou limpar políticas de limite de qualquer objeto nas páginas de inventário de objetos usando os botões *atribuir política de limite de desempenho* e *Limpar política de limite de desempenho*.
+
+[NOTE]
+====
+As interfaces listadas nesta página incluem Data LIFs, Cluster LIFs, Node Management LIFs e Intercluster LIFs. O Unified Manager não usa nem exibe LIFs do sistema.
+
+====
+xref:reference-lif-performance-fields.adoc[Campos de desempenho da interface de rede]Consulte para obter descrições de todos os campos nesta página.

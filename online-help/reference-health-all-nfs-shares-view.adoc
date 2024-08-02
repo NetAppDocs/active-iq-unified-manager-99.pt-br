@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-nfs-shares-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A visualização integridade: Todos os compartilhamentos NFS exibe informações sobre compartilhamentos NFS, como seu status, o caminho associado ao volume (volumes FlexGroup ou volumes FlexVol), níveis de acesso dos clientes aos compartilhamentos NFS e a política de exportação definida para os volumes que são exportados.' 
+---
+= Integridade: Visualização de todos os compartilhamentos NFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A visualização integridade: Todos os compartilhamentos NFS exibe informações sobre os compartilhamentos NFS, como status, caminho associado ao volume (volumes FlexGroup ou volumes FlexVol), níveis de acesso dos clientes aos compartilhamentos NFS e política de exportação definida para os volumes exportados.
+
+Por padrão, os objetos nesta página são classificados com base no status. Os objetos com erros são listados primeiro e os objetos com status normal são listados a seguir. Isso fornece uma indicação visual imediata dos problemas que devem ser resolvidos.
+
+Os controles ao longo da parte superior da página permitem selecionar uma exibição específica (para integridade, desempenho, capacidade e assim por diante), realizar pesquisas para localizar objetos específicos, criar e aplicar filtros para restringir a lista de dados exibidos, adicionar/remover/reordenar colunas na página e exportar os dados na página para um `.csv` arquivo , ou `.xlsx` . `.pdf` Depois de personalizar a página, você pode salvar os resultados como uma visualização personalizada e, em seguida, agendar um relatório desses dados para ser gerado e enviado por e-mail regularmente.
+
+Para analisar a latência e a taxa de transferência de um objeto específico, clique no ícone mais image:../media/more-icon.gif[""], depois em *analisar carga de trabalho* e você poderá visualizar gráficos de desempenho e capacidade na página análise de carga de trabalho.
+
+xref:reference-nfs-shares-health-fields.adoc[O NFS compartilha campos de integridade]Consulte para obter descrições de todos os campos nesta página.

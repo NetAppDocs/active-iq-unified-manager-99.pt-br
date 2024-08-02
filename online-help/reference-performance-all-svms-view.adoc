@@ -1,0 +1,27 @@
+---
+permalink: online-help/reference-performance-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A exibição desempenho: Todas as VMs de storage exibe uma visão geral dos eventos de performance, dados e informações de configuração de cada máquina virtual de storage (SVM) que está sendo monitorada por uma instância do Unified Manager. Isso permite que você monitore rapidamente a performance de seus SVMs e solucione problemas de performance e eventos de limite.' 
+---
+= Performance: Visualização de todas as VMs de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A visualização desempenho: Todas as VMs de storage exibe uma visão geral dos eventos de performance, dados e informações de configuração de cada máquina virtual de storage (SVM) que está sendo monitorada por uma instância do Unified Manager. Isso permite que você monitore rapidamente a performance de seus SVMs e solucione problemas de performance e eventos de limite.
+
+Por padrão, os objetos nas páginas de visualização são classificados com base na criticidade do evento. Os objetos com eventos críticos são listados primeiro e os objetos com eventos de aviso são listados em segundo lugar. Isso fornece uma indicação visual imediata dos problemas que devem ser resolvidos.
+
+Os controles ao longo da parte superior da página permitem selecionar uma exibição específica (para integridade, desempenho, capacidade e assim por diante), realizar pesquisas para localizar objetos específicos, criar e aplicar filtros para restringir a lista de dados exibidos, adicionar/remover/reordenar colunas na página e exportar os dados na página para um `.csv` arquivo , ou `.xlsx` . `.pdf` Depois de personalizar a página, você pode salvar os resultados como uma visualização personalizada e, em seguida, agendar um relatório desses dados para ser gerado e enviado por e-mail regularmente.
+
+Você pode atribuir políticas de limite de desempenho ou limpar políticas de limite de qualquer objeto nas páginas de inventário de objetos usando os botões *atribuir política de limite de desempenho* e *Limpar política de limite de desempenho*.
+
+[NOTE]
+====
+Os SVMs listados nesta página incluem somente dados e SVMs de cluster. O Unified Manager não usa nem exibe SVMs de Admin ou nó.
+
+====
+xref:reference-svm-performance-fields.adoc[Campos de performance do SVM]Consulte para obter descrições de todos os campos nesta página.

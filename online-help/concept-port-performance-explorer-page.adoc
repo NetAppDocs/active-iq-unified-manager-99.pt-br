@@ -1,0 +1,41 @@
+---
+permalink: online-help/concept-port-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Port/Performance Explorer fornece uma visão geral detalhada do desempenho de todas as portas em um cluster. 
+---
+= Página do Explorador de portas/desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Port/Performance Explorer fornece uma visão geral detalhada do desempenho de todas as portas em um cluster.
+
+[NOTE]
+====
+Os valores do contador de desempenho são exibidos apenas para portas físicas. Os valores de contador não são exibidos para VLANs ou grupos de interface.
+
+====
+A página Explorador de portas/desempenho permite-lhe monitorizar e comparar o desempenho da porta durante um período de tempo específico, o que o ajuda a resolver problemas e a ajustar o desempenho da porta.
+
+Usando a funcionalidade Ver e comparar, você pode comparar o desempenho desta porta com:
+
+* outras portas no mesmo nó
+* o nó no qual a porta reside
+* interfaces de rede que estão na porta
+
+
+[NOTE]
+====
+Somente LIFs de cluster e dados são exibidos ao filtrar usando a opção "'interfaces de rede nesta porta". Não são mostradas LIFs entre clusters.
+
+====
+A página Port/Performance Explorer permite:
+
+* Veja os problemas relacionados ao limite e seus detalhes
+* Acompanhe e compare os dados de desempenho da porta
+* Investigue e solucione problemas relacionados ao limite
+* Investigue e solucione problemas de desempenho
+

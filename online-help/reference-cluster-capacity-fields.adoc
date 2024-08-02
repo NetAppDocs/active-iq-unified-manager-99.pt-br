@@ -1,0 +1,104 @@
+---
+permalink: online-help/reference-cluster-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na exibição Capacity: All clusters e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= Campos de capacidade do cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na exibição Capacity: All clusters e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Cluster*
++
+O nome do cluster. Você pode clicar no nome do cluster para navegar até a página de detalhes da capacidade do cluster.
+
+* *Cluster FQDN*
++
+O nome de domínio totalmente qualificado (FQDN) do cluster.
+
+* *Par HA*
++
+O valor de par de HA obtido pela formação de dois nós.
+
+* * Capacidade bruta total*
++
+Exibe a capacidade física total de todos os discos no array.
+
+* *Capacidade bruta não configurada*
++
+A capacidade não configurada dos discos cujo tipo de contentor é diferente de agregado, quebrado, sobressalente ou compartilhado. Essa capacidade é sempre maior do que a capacidade física do disco no ONTAP. Por exemplo, considere um disco de 2 TB. A capacidade física do disco é de 1,6 TB no ONTAP, enquanto a capacidade bruta não configurada no Unified Manager é de 1,8 TB.
+
+* *Capacidade total agregada*
++
+O tamanho total dos agregados disponíveis para o usuário. Isso inclui a reserva de cópia Snapshot.
+
+* *Capacidade usada agregada*
++
+A capacidade já em uso em agregados. Isso inclui a capacidade consumida por volumes, LUNs e outras despesas gerais de tecnologia de eficiência de storage.
+
+* *Agregar capacidade não utilizada*
++
+A capacidade que pode estar disponível para armazenar dados adicionais no agregado. Isso inclui a reserva de cópia Snapshot.
+
+* *Espaço lógico utilizado*
++
+O tamanho real dos dados que estão sendo armazenados em todos os agregados neste cluster sem aplicar as economias com o uso das tecnologias de eficiência de storage da ONTAP.
+
+* *Redução de dados*
++
+A taxa de redução de dados com base nas configurações de eficiência de storage da ONTAP configuradas.
+
+* *Capacidade LUN alocada*
++
+A capacidade dos LUNs mapeados.
+
+* *Capacidade LUN não alocada*
++
+A capacidade de todos os LUNs não mapeados para o host.
+
+* * Volume capacidade total*
++
+A capacidade total dos volumes (utilizados mais não utilizados).
+
+* *Volume utilizado capacidade*
++
+A capacidade utilizada dos volumes.
+
+* * Volume de capacidade não utilizada*
++
+A capacidade não utilizada dos volumes.
+
+* * Capacidade de proteção de volume*
++
+A capacidade de volumes com o SnapMirror e o SnapVault ativados.
+
+* *Nível de nuvem usado (licenciado)*
++
+O espaço usado pelos dados na camada de nuvem para fornecedores de storage que exigem licença FabricPool.
+
+* *Cloud Tier usado (outros)*
++
+O espaço usado pelos dados na camada de nuvem para sistemas StorageGRID e armazenamentos de protocolos ONTAP S3 que não exigem licença FabricPool.
+
+* *Modelo/Família*
++
+O modelo ou nome da família do cluster.
+
+* *Versão do SO*
++
+A versão do ONTAP instalada no sistema.
+
+* *Contato*
++
+As informações de contacto do cluster.
+
+* *Localização*
++
+A localização do cluster.
+
+

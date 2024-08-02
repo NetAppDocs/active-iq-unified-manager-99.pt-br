@@ -1,0 +1,51 @@
+---
+permalink: install-windows/task-upgrading-openjdk-on-windows-ocum.html 
+sidebar: sidebar 
+keywords: OpenJDK,JRE 
+summary: Você pode atualizar para uma versão mais recente do OpenJDK no servidor Windows no qual o Unified Manager está instalado para obter correções para vulnerabilidades de segurança. 
+---
+= Atualizando o OpenJDK
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode atualizar para uma versão mais recente do OpenJDK no servidor Windows no qual o Unified Manager está instalado para obter correções para vulnerabilidades de segurança.
+
+
+
+== Antes de começar
+
+Você deve ter o Privileges de administrador do Windows para o sistema no qual o Unified Manager está instalado.
+
+
+
+== Sobre esta tarefa
+
+Você pode atualizar as versões do OpenJDK dentro das famílias de lançamento. Por exemplo, você pode atualizar do OpenJDK 11.0.7 para o OpenJDK 11,0.9, mas não pode atualizar diretamente do OpenJDK 11 para o OpenJDK 12.
+
+
+
+== Passos
+
+. Faça login como usuário admin na máquina host do Unified Manager.
+. Baixe a versão apropriada do OpenJDK (64 bits) do site OpenJDK para o sistema de destino.
++
+Por exemplo, faça o download `openjdk-11_windows-x64_bin.zip` em `+http://jdk.java.net/11/+`.
+
+. Use o console dos Serviços do Windows para interromper os seguintes serviços do Unified Manager:
++
+** Serviço de aquisição da NetApp Active IQ (Ocie-au)
+** Serviço de servidor de gerenciamento NetApp Active IQ (Oncommandsvc)
+
+
+. Expanda o `zip` ficheiro.
+. Copie os diretórios e arquivos do diretório resultante `jdk`, por exemplo, `jdk-11.0.9` para o local onde o Java está instalado. Exemplo: `C:\Program Files\NetApp\JDK\`
+. Inicie os serviços do Unified Manager usando o console dos Serviços do Windows:
++
+** Serviço de servidor de gerenciamento NetApp Active IQ (Oncommandsvc)
+** Serviço de aquisição da NetApp Active IQ (Ocie-au)
+
+
+

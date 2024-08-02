@@ -1,0 +1,75 @@
+---
+permalink: online-help/reference-qtree-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na capacidade: Todos os modos de exibição Qtrees e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= Campos de capacidade Qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na capacidade: Todos os modos de exibição Qtrees e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Status*
++
+Exibe o status atual da qtree. O status pode ser crítico (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"] ), erro (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ), Aviso (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"] ) ou normal (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]).
+
+* *Qtree*
++
+Exibe o nome da qtree.
+
+* *Volume*
++
+Exibe o nome do volume que contém a qtree.
+
++
+Pode clicar no nome do volume para ver mais informações sobre o volume.
+
+* *Tipo de cota*
++
+Se uma cota for definida para a qtree, especifica se a cota é para um Usuário, Grupo de usuários ou Árvore.
+
+* *Usuário ou Grupo*
++
+Exibe o nome do usuário ou grupo de usuários. Haverá várias linhas para cada usuário e grupo de usuários. Quando o tipo de cota é qtree ou se a cota não estiver definida, a coluna estará vazia.
+
+* *Disco usado %*
++
+Exibe a porcentagem de espaço em disco usado. Se um limite de disco rígido for definido, esse valor será baseado no limite de disco rígido. Se a cota for definida sem um limite de disco rígido, o valor será baseado no espaço de dados do volume. Se a cota não estiver definida ou se as cotas estiverem desativadas no volume ao qual a qtree pertence, então ""não aplicável"" é exibido na página da grade e o campo está em branco nos dados de exportação CSV.
+
+* *Limite rígido do disco*
++
+Exibe a quantidade máxima de espaço em disco alocado para a qtree. O Unified Manager gera um evento crítico quando esse limite é atingido e nenhuma gravação de disco adicional é permitida. O valor é exibido como "ilimitado" para as seguintes condições: Se a cota for definida sem um limite de disco rígido, se a cota não for definida ou se as cotas estiverem desativadas no volume a que a qtree pertence.
+
+* *Limite de software do disco*
++
+Exibe a quantidade de espaço em disco alocado para a qtree antes que um evento de aviso seja gerado. O valor é exibido como "ilimitado" para as seguintes condições: Se a cota for definida sem um limite de software do disco, se a cota não for definida ou se as cotas estiverem desativadas no volume a que a qtree pertence.
+
+* *Ficheiros utilizados %*
++
+Exibe a porcentagem de arquivos usados na qtree. Se o limite rígido do arquivo estiver definido, esse valor será baseado no limite rígido do arquivo. Nenhum valor será exibido se a cota for definida sem um limite rígido de arquivo. Se a cota não estiver definida ou se as cotas estiverem desativadas no volume ao qual a qtree pertence, então ""não aplicável"" é exibido na página da grade e o campo está em branco nos dados de exportação CSV.
+
+* *Limite rígido do arquivo*
++
+Exibe o limite rígido para o número de arquivos permitidos no qtrees. O valor é exibido como "ilimitado" para as seguintes condições: Se a cota for definida sem um limite rígido de arquivo, se a cota não for definida, ou se as cotas estiverem desativadas no volume a que a qtree pertence.
+
+* *Limite de software de arquivo*
++
+Apresenta o limite de software para o número de ficheiros permitidos no qtrees. O valor é exibido como "ilimitado" para as seguintes condições: Se a cota for definida sem um limite de arquivo, se a cota não for definida, ou se as cotas estiverem desativadas no volume a que a qtree pertence.
+
+* *SVM*
++
+Exibe o nome da máquina virtual de storage (SVM) que contém a qtree.
+
+* *Cluster*
++
+Exibe o nome do cluster que contém a qtree.
+
+* *Cluster FQDN*
++
+Exibe o nome de domínio totalmente qualificado (FQDN) do cluster.
+
+

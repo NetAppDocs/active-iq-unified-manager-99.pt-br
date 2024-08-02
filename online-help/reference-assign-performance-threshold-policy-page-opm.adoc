@@ -1,0 +1,20 @@
+---
+permalink: online-help/reference-assign-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página atribuir política de limite de desempenho para atribuir uma política de limite de desempenho a um ou mais objetos de storage. 
+---
+= Atribua a página Política de limite de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página atribuir política de limite de desempenho para atribuir uma política de limite de desempenho a um ou mais objetos de storage.
+
+A lista de políticas é preenchida apenas com as políticas válidas para o tipo de objeto de armazenamento selecionado.
+
+Selecione a política que deseja aplicar ao objeto ou objetos e clique em *aplicar política*.
+
+Há alguns casos em que uma mensagem de erro pode ser retornada quando você tenta aplicar uma diretiva, por exemplo, ao aplicar uma diretiva de combinação a um volume FlexGroup, em que o segundo contador inclui um nó ou um objeto agregado. Como os volumes do FlexGroup podem ser espalhados por vários nós e agregados, essa operação não é permitida.

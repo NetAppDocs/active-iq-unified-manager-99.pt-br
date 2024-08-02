@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-active-events-from-the-notification-bell.html 
+sidebar: sidebar 
+keywords: notification bell 
+summary: A campainha de notificação na barra de menus fornece uma maneira rápida de visualizar os eventos ativos mais importantes que o Unified Manager está rastreando. 
+---
+= Ver eventos ativos a partir do sino de notificação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O sino de notificação (image:../media/notification-bell.png[""] ) na barra de menus fornece uma maneira rápida de exibir os eventos ativos mais importantes que o Unified Manager está rastreando.
+
+
+
+== Sobre esta tarefa
+
+A lista de eventos ativos fornece uma maneira de ver o número total de eventos críticos, de erro, de aviso e de atualização em todos os clusters. Esta lista inclui eventos dos últimos 7 dias e não inclui eventos de Informação. Você pode clicar em um link para exibir a lista de eventos nos quais você está mais interessado.
+
+Observe que quando um cluster não é acessível, o Unified Manager exibe essas informações nesta página. Você pode visualizar informações detalhadas sobre um cluster que não é acessível clicando no botão *Detalhes*. Esta ação abre a página de detalhes do evento. Problemas de monitoramento de escala, como baixo espaço ou RAM na estação de gerenciamento, também são exibidos nesta página.
+
+
+
+== Passos
+
+. Na barra de menus, clique image:../media/notification-bell.png[""]em .
+. Para ver detalhes de qualquer um dos eventos ativos, clique no link de texto do evento, como ""capacidade 2"" ou ""desempenho 4"".
+

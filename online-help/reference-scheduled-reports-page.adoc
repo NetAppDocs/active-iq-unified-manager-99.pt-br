@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-scheduled-reports-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Agenda de relatórios permite visualizar informações detalhadas sobre os relatórios que você criou e a programação em que eles são gerados. Você pode pesquisar um relatório específico, modificar determinados atributos de uma programação de relatório e excluir uma programação de relatório. 
+---
+= Página programas de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Agenda de relatórios permite visualizar informações detalhadas sobre os relatórios que você criou e a programação em que eles são gerados. Você pode pesquisar um relatório específico, modificar determinados atributos de uma programação de relatório e excluir uma programação de relatório.
+
+A página Agenda de relatórios exibe a lista de relatórios criados no sistema.
+
+* *Nome da programação*
++
+O nome do relatório agendado. Inicialmente, esse nome inclui o nome Exibir e a frequência. Você pode alterar esse nome para refletir melhor o conteúdo do relatório.
+
+* *Vista*
++
+A visualização que foi usada para criar o relatório.
+
+* *Destinatários*
++
+Os endereços de e-mail dos usuários que receberão o relatório gerado. Cada endereço de e-mail deve ser separado por uma vírgula.
+
+* *Frequência*
++
+Com que frequência o relatório é gerado e enviado aos destinatários.
+
+* *Formato*
++
+Se o relatório é gerado como um arquivo PDF ou no formato XLSX ou CSV.
+
+* *Botão de ação*
++
+Opções disponíveis para editar ou excluir a programação do relatório.
+
+

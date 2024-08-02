@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-database-backup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Backup do banco de dados exibe uma lista de backups criados pelo Unified Manager e fornece informações sobre o nome, o tamanho e o tempo de criação do backup. 
+---
+= Página cópia de segurança da base de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Backup do banco de dados exibe uma lista de backups criados pelo Unified Manager e fornece informações sobre o nome, o tamanho e o tempo de criação do backup.
+
+Tem de ter a função Administrador de aplicações ou Administrador de armazenamento.
+
+
+
+== Vista de lista
+
+A vista de lista apresenta informações sobre os ficheiros de cópia de segurança disponíveis.
+
+* *Nome*
++
+Nome da cópia de segurança.
+
+* *Tamanho*
++
+Tamanho da cópia de segurança.
+
+* *Tempo de criação*
++
+Data e hora de criação da cópia de segurança.
+
+
+
+
+
+== Botões de comando
+
+* * Configurações de backup*
++
+Exibe a caixa de diálogo Configurações de backup, que permite especificar um caminho de backup, contagem de retenção e agendamento de backup.
+
+

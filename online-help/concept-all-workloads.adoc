@@ -1,0 +1,53 @@
+---
+permalink: online-help/concept-all-workloads.html 
+sidebar: sidebar 
+keywords: workloads,workloads 
+summary: A visualização todos os workloads exibe a lista de todos os workloads disponíveis nos clusters de um data center. 
+---
+= Visualização de workloads
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A visualização todos os workloads exibe a lista de todos os workloads disponíveis nos clusters de um data center.
+
+A visualização todos os workloads lista os workloads de storage associados aos clusters do ONTAP gerenciados pelo Unified Manager. A página também permite que você atribua políticas de eficiência de storage (SEPs) e níveis de serviço de performance (PSLs) a workloads de storage.
+
+Quando você adiciona clusters ao Unified Manager, os workloads de storage em cada cluster são automaticamente descobertos e exibidos nesta página, exceto os volumes do FlexGroup e seus componentes.
+
+O Unified Manager começa a analisar os workloads para recomendação (PSLs recomendadas) somente após o início das operações de e/S nos workloads de storage. Para as cargas de trabalho de storage recém-descobertas nas quais não houve operações de e/S, o status é "'aguardando pela e/S'". Depois que as operações de e/S começam nas cargas de trabalho de storage, o Unified Manager inicia a análise e o status da carga de trabalho muda para "'Learning...'". Após a conclusão da análise (dentro de 24 horas a partir do início das operações de e/S), as PSLs recomendadas são exibidas para as cargas de trabalho de storage.
+
+Usando a opção *cargas de trabalho* > *todas as cargas de trabalho*, você pode executar várias tarefas:
+
+* Adicionar ou provisionar workloads de storage
+* Visualize e filtre a lista de cargas de trabalho
+* Atribuir PSLs a workloads de storage
+* Avalie as PSLs recomendadas pelo sistema e atribua-as a cargas de trabalho
+* Atribuir SEPs a workloads de storage
+
+
+
+
+== Adição ou provisionamento de workloads de storage
+
+Você pode adicionar ou provisionar os workloads de storage a LUNs compatíveis (compatíveis com protocolos iSCSI e FCP), compartilhamentos de arquivos NFS e compartilhamentos de SMB.
+
+
+
+== Visualização e filtragem de workloads
+
+Na tela todos os workloads, você pode visualizar todos os workloads no data center ou pesquisar workloads de storage específicos com base nas PSLs ou nos nomes deles. Pode utilizar o ícone de filtro para introduzir condições específicas para a sua pesquisa. Você pode pesquisar por diferentes condições de filtro, como pelo cluster de host ou VM de armazenamento. A opção *Capacity Total* permite a filtragem pela capacidade total das cargas de trabalho (por MB). No entanto, nesse caso, o número de cargas de trabalho retornadas pode variar, porque a capacidade total é comparada em um nível de byte.
+
+Para cada carga de trabalho, são exibidas informações, como o cluster de host e a VM de armazenamento, juntamente com o PSL e o SEP atribuídos.
+
+A página também permite visualizar os detalhes de performance de um workload. Você pode exibir informações detalhadas sobre o IOPS, a capacidade e a latência da carga de trabalho clicando no botão *escolher / pedir colunas* e selecionando colunas específicas para exibir. A coluna Exibição de desempenho exibe as IOPS média e pico de uma carga de trabalho e você pode clicar no ícone do analisador de carga de trabalho para exibir a análise detalhada de IOPS. O botão *Analyze Workload* na janela pop-up análise de IOPS leva você à página análise de cargas de trabalho, onde você pode selecionar um intervalo de tempo e exibir as tendências de latência, taxa de transferência e capacidade para a carga de trabalho selecionada. Para obter mais informações sobre o analisador de carga de trabalho, consulte _Troubleshooting cargas de trabalho usando o analisador de carga de trabalho_
+
+link:concept-troubleshooting-workloads-using-the-workload-analyzer.html["Solução de problemas de cargas de trabalho usando o analisador de carga de trabalho"]
+
+
+
+== Análise de critérios de performance e capacidade de um workload
+
+Você pode exibir informações de desempenho sobre uma carga de trabalho para ajudar na solução de problemas clicando no ícone do gráfico de barras na coluna *Exibição de desempenho*. Para visualizar gráficos de desempenho e capacidade na página análise de workload para analisar o objeto, clique no botão *Analyze Workload*.

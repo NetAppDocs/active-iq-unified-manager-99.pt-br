@@ -1,0 +1,14 @@
+---
+permalink: reporting/concept-customizing-qtree-capacity-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Esses relatórios personalizados de amostra são usados para ajudá-lo a identificar e responder a possíveis problemas relacionados à capacidade do Qtree. 
+---
+= Personalizar relatórios de capacidade do Qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Esses relatórios personalizados de amostra são usados para ajudá-lo a identificar e responder a possíveis problemas relacionados à capacidade do Qtree.

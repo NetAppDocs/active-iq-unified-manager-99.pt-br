@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-network-interface-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A página Network Interface/Performance Explorer fornece uma visão geral detalhada do desempenho de todas as interfaces de rede (LIFs) dentro de um cluster.' 
+---
+= Interface de rede/Explorer de desempenho página
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Network Interface/Performance Explorer fornece uma visão geral detalhada do desempenho de todas as interfaces de rede (LIFs) dentro de um cluster.
+
+A página Interface de rede/Explorador de desempenho permite-lhe controlar e comparar o desempenho da interface de rede durante um período de tempo específico, o que o ajuda a resolver problemas e a ajustar o desempenho da interface de rede.
+
+Usando a funcionalidade Ver e comparar, você pode comparar o desempenho desta interface de rede com:
+
+* outras interfaces de rede que estão na mesma porta
+* Outras interfaces de rede que estão na mesma VM de storage
+* a porta na qual reside a interface de rede
+* A VM de storage na qual reside a interface de rede
+
+
+A página Interface de rede/Explorador de desempenho permite:
+
+* Veja os problemas relacionados ao limite e seus detalhes
+* Acompanhe e compare os dados de desempenho da interface de rede
+* Investigue e solucione problemas relacionados ao limite
+* Investigue e solucione problemas de desempenho
+

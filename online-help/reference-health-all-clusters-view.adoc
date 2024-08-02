@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-health-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A visualização integridade: Todos os clusters permite exibir informações de integridade sobre os clusters que você está monitorando.' 
+---
+= Integridade: Exibição todos os clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A visualização integridade: Todos os clusters permite exibir informações de integridade sobre os clusters que você está monitorando.
+
+Por padrão, os objetos nas páginas de visualização são classificados com base na criticidade do evento. Os objetos com eventos críticos são listados primeiro e os objetos com eventos de aviso são listados em segundo lugar. Isso fornece uma indicação visual imediata dos problemas que devem ser resolvidos. Cada cluster na grade de clusters tem links para o Gerenciador de sistemas do ONTAP. Este link redireciona você para ver a mesma relação de proteção no Gerenciador de sistemas do ONTAP. A opção de menu *View in System Manager* está disponível como um dos links. O link *View in System Manager* também está disponível na página de detalhes da integridade, desempenho e capacidade do cluster.
+
+Os controles ao longo da parte superior da página permitem selecionar uma exibição específica (para integridade, desempenho, capacidade e assim por diante), realizar pesquisas para localizar objetos específicos, criar e aplicar filtros para restringir a lista de dados exibidos, adicionar/remover/reordenar colunas na página e exportar os dados na página para um `.csv` arquivo , ou `.xlsx` . `.pdf` Depois de personalizar a página, você pode salvar os resultados como uma visualização personalizada e, em seguida, agendar um relatório desses dados para ser gerado e enviado por e-mail regularmente.
+
+Você pode usar o botão *Configuração de cluster* para modificar ou adicionar clusters ao Active IQ Unified Manager. Todos os clusters disponíveis no Active IQ Unified Manager são listados e cada link de nome de cluster permite acesso à página do Gerenciador de sistema do ONTAP para facilitar a navegação.
+
+Pode associar um cluster a uma anotação predefinida utilizando o botão *Annotate*.
+
+xref:reference-cluster-health-fields.adoc[Campos de integridade do cluster]Consulte para obter descrições de todos os campos nesta página.

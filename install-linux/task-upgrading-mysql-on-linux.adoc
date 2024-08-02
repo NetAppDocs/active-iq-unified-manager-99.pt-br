@@ -1,0 +1,50 @@
+---
+permalink: install-linux/task-upgrading-mysql-on-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode atualizar para uma versão mais recente do MySQL no servidor Linux no qual o Unified Manager está instalado para obter correções para vulnerabilidades de segurança. Se a versão instalada do MySQL no seu sistema for anterior à 8,0.25, o processo de atualização do Unified Manager 9,9 atualiza automaticamente o MySQL para 8,0.25. Você não deve executar uma atualização autônoma do MySQL de uma versão anterior para 8,0.25. 
+---
+= Atualizando MySQL no Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode atualizar para uma versão mais recente do MySQL no servidor Linux no qual o Unified Manager está instalado para obter correções para vulnerabilidades de segurança. Se a versão instalada do MySQL no seu sistema for anterior à 8,0.25, o processo de atualização do Unified Manager 9,9 atualiza automaticamente o MySQL para 8,0.25. Você não deve executar uma atualização autônoma do MySQL de uma versão anterior para 8,0.25.
+
+
+
+== Antes de começar
+
+Você precisa ter o Privileges raiz para o sistema Linux no qual o Unified Manager está instalado.
+
+
+
+== Sobre esta tarefa
+
+Você pode atualizar a versão base do MySQL 8.0.25 para versões posteriores apenas para pequenas atualizações.
+
+
+
+== Passos
+
+. Faça login como usuário raiz na máquina host do Unified Manager.
+. Baixe o pacote mais recente do MySQL Community Server `.rpm` no sistema de destino.
+. Descompacte o bundle para um diretório no sistema de destino.
+. Você obtém vários `.rpm` pacotes no diretório depois de reiniciar o pacote, mas o Unified Manager só precisa dos seguintes pacotes rpm:
++
+** mysql-community-client-8.0.25
+** mysql-community-libs-8.0.25
+** mysql-community-server-8.0.25
+** mysql-community-common-8.0.25
+** MySQL-Community-client-plugins-8.0.25 Excluir todos os outros `.rpm` pacotes. No entanto, instalar todos os pacotes em um pacote rpm não causa erros.
+
+
+. Pare o serviço Unified Manager e o software MySQL associado na ordem mostrada:
+. Invoque a atualização do MySQL usando o seguinte comando: `yum install *.rpm`
++
+`*.rpm` Refere-se aos `.rpm` pacotes no diretório em que você baixou a versão mais recente do MySQL.
+
+. Inicie o Unified Manager na ordem mostrada:
+

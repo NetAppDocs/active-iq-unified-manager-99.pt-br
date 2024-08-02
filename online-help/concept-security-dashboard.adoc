@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-security-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode ativar ou desativar o painel Segurança no painel do Active IQ Unified Manager. Quando ativado, você também pode personalizar as configurações de monitoramento de conformidade e os eventos de segurança e ações de gerenciamento relevantes. 
+---
+= Painel de segurança
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode ativar ou desativar o painel Segurança no painel do Active IQ Unified Manager. Quando ativado, você também pode personalizar as configurações de monitoramento de conformidade e os eventos de segurança e ações de gerenciamento relevantes.
+
+[NOTE]
+====
+Somente usuários com função de administrador podem editar essas configurações.
+
+====
+Os critérios de segurança dos clusters, máquinas virtuais de storage e volumes do ONTAP são avaliados em relação às recomendações definidas no Guia de endurecimento de segurança da NetApp para ONTAP 9. O painel de segurança no painel exibe o status de conformidade de segurança dos clusters, das VMs de storage e dos volumes. A ativação desse recurso também gera eventos de segurança para qualquer cluster ou VM de armazenamento que tenha violações de segurança.
+
+
+
+== Personalizar as definições
+
+Ao ativar esse recurso, você pode personalizar as configurações para monitoramento de conformidade, conforme aplicável ao seu ambiente ONTAP. Essas configurações acionam os eventos de segurança e as ações de gerenciamento relevantes. Siga estes passos:
+
+. Clique em *Personalizar*. A janela pop-up Personalizar definições do painel de segurança é apresentada.
+. Para ativar ou desativar as configurações personalizadas para os clusters do ONTAP, expanda a seleção *Configurações gerais* para clusters. Para obter informações sobre as opções de personalização da conformidade do cluster, xref:reference-cluster-compliance-categories.adoc[Categorias de conformidade de cluster]consulte .
+. Para ativar ou desativar as configurações personalizadas para as VMs de armazenamento, expanda a seleção *General Settings* para VMs de armazenamento. Para obter informações sobre as opções de personalização da conformidade da VM de storage, xref:reference-svm-compliance-categories.adoc[Categorias de conformidade de VM de storage]consulte .
+. Você também pode especificar se o transporte HTTPS deve ser usado para enviar mensagens AutoSupport do ONTAP.
+. Se você ativar as configurações de autenticação, os alertas serão gerados do Unified Manager para o usuário padrão do administrador do ONTAP.
+

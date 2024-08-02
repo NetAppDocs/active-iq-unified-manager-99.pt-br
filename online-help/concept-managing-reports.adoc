@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: O Active IQ Unified Manager permite criar e gerenciar relatórios diretamente na interface de usuário do Unified Manager para que você possa exibir informações sobre a integridade, a capacidade, a performance e as relações de proteção dos objetos de storage nos clusters. A revisão dessas informações pode ajudá-lo a identificar possíveis problemas antes que eles ocorram. 
+---
+= Gerenciamento de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Active IQ Unified Manager permite criar e gerenciar relatórios diretamente na interface de usuário do Unified Manager para que você possa exibir informações sobre a integridade, a capacidade, a performance e as relações de proteção dos objetos de storage nos clusters. A revisão dessas informações pode ajudá-lo a identificar possíveis problemas antes que eles ocorram.
+
+Você pode baixar relatórios como valores separados por vírgulas (.csv), Microsoft Excel (.xlsx) ou arquivos PDF. Você também pode agendar um relatório para ser enviado usando e-mail para um grupo de destinatários. Os relatórios são enviados como anexos de e-mail.
+
+Além de gerar relatórios a partir da interface de usuário, você pode extrair dados de integridade e desempenho do Unified Manager usando esses métodos adicionais:
+
+* Usando as ferramentas ODBC (Open Database Connectivity) e ODBC para acessar diretamente o banco de dados para obter informações de cluster
+* Executando as APIs REST do Unified Manager para retornar as informações que você está interessado em analisar
+
+
+A partir desta versão do Active IQ Unified Manager, os seguintes aprimoramentos são feitos nos relatórios :
+
+* O e-mail é enviado para um relatório de acordo com a programação configurada. Mesmo quando você gera um relatório sob demanda, você receberá um e-mail.
+* O nome do arquivo do relatório e os metadados do relatório incluem o nome do host de onde o relatório foi gerado.
++
+Mesmo que alguém altere o nome do arquivo, ainda assim você pode identificar o nome do host de onde o relatório foi gerado devido a esse aprimoramento.
+
+

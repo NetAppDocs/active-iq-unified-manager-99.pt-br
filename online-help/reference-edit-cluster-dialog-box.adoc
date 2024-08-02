@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-edit-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Editar cluster permite modificar as configurações de conexão de um cluster existente, incluindo o endereço IP, a porta e o protocolo. 
+---
+= Caixa de diálogo Editar cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Editar cluster permite modificar as configurações de conexão de um cluster existente, incluindo o endereço IP, a porta e o protocolo.
+
+Você pode editar os seguintes campos:
+
+* *Nome do host ou endereço IP*
++
+Permite especificar o FQDN, o nome abreviado ou o endereço IP (IPv4 ou IPv6) do LIF de gerenciamento de cluster usado para se conetar ao cluster.
+
+* *Nome de usuário*
++
+Permite especificar um nome de utilizador que pode ser utilizado para iniciar sessão no cluster.
+
+* *Senha*
++
+Permite especificar uma palavra-passe para o nome de utilizador especificado.
+
+* *Porto*
++
+Permite especificar o número da porta utilizada para ligar ao cluster. A porta padrão é 443 para HTTPS.
+
+

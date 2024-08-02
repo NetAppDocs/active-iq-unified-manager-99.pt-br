@@ -1,0 +1,125 @@
+---
+permalink: online-help/reference-nfs-shares-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na visualização integridade: Todos os compartilhamentos NFS e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= O NFS compartilha campos de integridade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na visualização integridade: Todos os compartilhamentos NFS e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Status*
++
+Exibe o status atual dos compartilhamentos NFS. O status pode ser erro (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ) ou normal (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]).
+
+* *Caminho do Monte*
++
+Apresenta o caminho para o qual o volume está montado. Se uma política explícita de exportações de NFS for aplicada a uma qtree, a coluna exibirá o caminho do volume pelo qual a qtree pode ser acessada.
+
+* *Caminho de montagem ativo*
++
+Indica se o caminho para aceder ao volume montado está ativo ou inativo.
+
+* *Qtree*
++
+Exibe o nome da qtree à qual a política de exportação NFS é aplicada.
+
+* *Volume*
++
+Exibe o nome do volume ao qual a política de exportação NFS é aplicada.
+
+* *Estado do volume*
++
+Exibe o estado do volume que está sendo exportado. O estado pode ser Offline, Online, restrito ou Misto.
+
++
+** Offline
++
+O acesso de leitura ou gravação ao volume não é permitido.
+
+** Online
++
+O acesso de leitura e gravação ao volume é permitido.
+
+** Restrito
++
+Operações limitadas, como reconstrução de paridade, são permitidas, mas o acesso aos dados não é permitido.
+
+** Misto
++
+Os constituintes de um volume FlexGroup não estão todos no mesmo estado.
+
+
+
+* *Estilo de segurança*
++
+Exibe a permissão de acesso para os volumes exportados. O estilo de segurança pode ser UNIX, Unified, NTFS ou Misto.
+
++
+** UNIX (clientes NFS)
++
+Arquivos e diretórios no volume têm permissões UNIX.
+
+** Unificado
++
+Os arquivos e diretórios no volume têm um estilo de segurança unificado.
+
+** NTFS (clientes CIFS)
++
+Os arquivos e diretórios no volume têm permissões do Windows NTFS.
+
+** Misto
++
+Arquivos e diretórios no volume podem ter permissões UNIX ou permissões Windows NTFS.
+
+
+
+* *Permissão UNIX*
++
+Exibe os bits de permissão UNIX em um formato de cadeia de carateres octal, que é definido para os volumes que são exportados. É semelhante aos bits de permissão do estilo UNIX.
+
+* *Política de exportação*
++
+Exibe as regras que definem a permissão de acesso para volumes exportados.
+
++
+Quando você gera um relatório para a exibição integridade: Todos os compartilhamentos NFS, todas as regras que pertencem à política de exportação são exportadas para o arquivo CSV ou PDF.
+
+* *Índice de regras*
++
+Exibe as regras associadas à política de exportação, como os protocolos de autenticação e a permissão de acesso.
+
+* *Protocolos de Acesso*
++
+Exibe os protocolos ativados para as regras de política de exportação.
+
+* *Correspondência do cliente*
++
+Exibe os clientes que têm permissão para acessar dados nos volumes.
+
+* *Acesso somente leitura*
++
+Apresenta o protocolo de autenticação utilizado para ler dados nos volumes.
+
+* *Acesso de leitura de escrita*
++
+Exibe o protocolo de autenticação usado para ler ou gravar dados nos volumes.
+
+* *Storage VM*
++
+Exibe o nome da SVM com políticas de compartilhamento NFS.
+
+* *Cluster*
++
+Exibe o nome do cluster.
+
+* *Cluster FQDN*
++
+Exibe o nome de domínio totalmente qualificado (FQDN) do cluster.
+
+

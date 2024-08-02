@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-dashboard-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A página do Dashboard tem "painéis" que exibem a capacidade, a performance e a integridade da segurança de alto nível dos clusters que você está monitorando. Esta página também fornece um painel ações de gerenciamento que lista as correções que o Unified Manager pode fazer para resolver determinados eventos.' 
+---
+= Página do painel de instrumentos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página do Dashboard tem "painéis" que exibem a capacidade, o desempenho e a integridade de segurança de alto nível dos clusters que você está monitorando. Esta página também fornece um painel ações de gerenciamento que lista as correções que o Unified Manager pode fazer para resolver determinados eventos.
+
+A maioria dos painéis também exibe o número de eventos ativos nessa categoria e o número de novos eventos adicionados nas 24 horas anteriores. Essas informações ajudam você a decidir quais clusters você pode precisar analisar mais para resolver eventos. Clicar nos eventos exibe os principais eventos e fornece um link para a página de inventário do Gerenciamento de Eventos filtrada para mostrar os eventos ativos nessa categoria.
+
+Na parte superior do painel, você pode selecionar se os painéis mostram informações para todos os clusters monitorados ("'todos os clusters") ou para um cluster individual. Você pode começar visualizando o status de todos os clusters e, em seguida, pesquisar clusters individuais quando quiser exibir informações detalhadas.
+
+[NOTE]
+====
+Alguns dos painéis listados abaixo não aparecerão na página com base na sua configuração.
+
+====
+* *Painel de ações de gerenciamento*
++
+Há certos problemas que o Unified Manager faz o diagnóstico completo e fornece uma única resolução. Quando disponíveis, essas resoluções são exibidas neste painel com um botão *Fix it* ou *Fix All*. Você pode corrigir esses problemas imediatamente a partir do Unified Manager em vez de usar o ONTAP System Manager ou a CLI do ONTAP. Para visualizar todos os problemas, clique em
+
++
+Consulte link:concept-fixing-ontap-issues-directly-from-unified-manager.html["Correção de problemas do ONTAP diretamente do Unified Manager"] para obter mais informações.
+
+* * Painel de capacidade*
++
+Ao visualizar todos os clusters, esse painel exibe a capacidade física usada (depois de aplicar a economia de eficiência de storage) e a capacidade física disponível (não incluindo a possível economia de eficiência de storage) para cada cluster, o número de dias até que os discos estejam cheios e a taxa de redução de dados com base nas configurações de eficiência de storage ONTAP configuradas. Ele também lista a capacidade usada para todas as categorias de nuvem configuradas. Clicar no gráfico de barras leva você à página de inventário de agregados para esse cluster. Ao clicar no texto ""dias para completo"" exibe uma mensagem que identifica o agregado com o menor número de dias de capacidade restantes; clique no nome do agregado para ver mais detalhes.
+
++
+Ao exibir um único cluster, esse painel exibe a capacidade física usada e a capacidade física disponível para os agregados de dados classificados por cada tipo de disco individual na camada local e para a camada de nuvem. Clicar no gráfico de barras para um tipo de disco leva você à página de inventário de volumes para os volumes que usam esse tipo de disco.
+
+* *Painel de capacidade de desempenho*
++
+Ao visualizar todos os clusters, esse painel exibe o valor da capacidade de desempenho para cada cluster (média sobre as 1 horas anteriores) e o número de dias até que a capacidade de desempenho atinja o limite superior (com base na taxa de crescimento diária). Clicar no gráfico de barras leva você à página de inventário de nós para esse cluster. Observe que a página de inventário de nós exibe a média da capacidade de desempenho nas 72 horas anteriores. Ao clicar no texto "'dias até completo", você exibe uma mensagem que identifica o nó com o menor número de dias de capacidade de desempenho restantes; clique no nome do nó para ver mais detalhes.
+
++
+Ao exibir um único cluster, esse painel exibe os valores de porcentagem de capacidade de desempenho do cluster usada, IOPS total e taxa de transferência total (MB/s) e o número de dias até que cada uma dessas três métricas atinja seu limite superior.
+
+* *Painel de IOPS de carga de trabalho*
++
+Ao exibir um único cluster, esse painel exibe o número total de cargas de trabalho atualmente em execução em um determinado intervalo de IOPS e indica o número de cada tipo de disco quando você passa o cursor sobre o gráfico.
+
+* *Painel de desempenho de carga de trabalho*
++
+Esse painel exibe o número total de workloads em conformidade e não conformes atribuídos a cada política de nível de serviço de desempenho (PSL). Ele também exibe o número de cargas de trabalho que não recebem um PSL. Clicar em um gráfico de barras leva você aos workloads em conformidade atribuídos a essa política na página workloads. Clicar no número que segue o gráfico de barras leva você aos workloads em conformidade e não conformes atribuídos a essa política.
+
+* *Painel de segurança*
++
+Ao exibir todos os clusters, esse painel exibe o número de clusters compatíveis e não compatíveis, o número de VMs de storage compatíveis e não compatíveis e o número de volumes criptografados e não criptografados. A conformidade baseia-se no https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["Guia de endurecimento de segurança da NetApp para ONTAP 9"^]. Clique na seta para a direita na parte superior do painel para exibir os detalhes de segurança de todos os clusters na página Segurança.
+
++
+Ao exibir um único cluster, esse painel exibe se o cluster é compatível ou não, o número de VMs de armazenamento compatíveis e não compatíveis e o número de volumes criptografados e não criptografados. Clique na seta para a direita na parte superior do painel para ver os detalhes de segurança do cluster na página Segurança.
+
+* *Painel de visão geral de uso*
++
+Ao visualizar todos os clusters, você pode optar por exibir clusters classificados por IOPS mais alto, maior taxa de transferência (MB/s) ou maior capacidade física usada.
+
++
+Ao visualizar um único cluster, você pode optar por exibir cargas de trabalho classificadas por IOPS mais alto, maior taxa de transferência (MB/s) ou maior capacidade lógica usada.
+
+

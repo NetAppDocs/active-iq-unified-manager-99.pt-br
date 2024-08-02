@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-deleting-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode excluir os pares de VM de armazenamento para aplicativos parceiros para remover a relação de provisionamento secundário entre a VM de armazenamento de origem e destino; por exemplo, você pode fazer isso quando a VM de armazenamento de destino estiver cheia e desejar criar um novo par de proteção de VM de armazenamento. 
+---
+= Exclusão de Storage VM peers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir os pares de VM de armazenamento para aplicativos parceiros para remover a relação de provisionamento secundário entre a VM de armazenamento de origem e destino; por exemplo, você pode fazer isso quando a VM de armazenamento de destino estiver cheia e desejar criar um novo par de proteção de VM de armazenamento.
+
+
+
+== Antes de começar
+
+Tem de ter a função Administrador de aplicações ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+O botão *Delete* é desativado até que pelo menos um ponto de VM de armazenamento seja selecionado. Alterar associações usando as funções excluir e criar afeta apenas operações futuras de provisionamento; ele não move volumes de destino existentes.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *proteção* > *Storage VM peers*.
+. Selecione pelo menos um ponto de VM de armazenamento.
++
+O botão *Delete* está ativado.
+
+. Clique em *Excluir.*
++
+É apresentada uma caixa de diálogo de aviso.
+
+. Clique em *Yes* para continuar.
++
+O peer de VM de armazenamento selecionado é removido da lista.
+
+

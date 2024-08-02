@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-lag-thresholds-for-unmanaged-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página limites de relacionamento permite configurar os valores de aviso de atraso global e limite de erro para relacionamentos de proteção não gerenciados, para que você seja notificado e possa agir quando ocorrerem erros de atraso ou limite. As alterações a estas definições são aplicadas durante a próxima atualização agendada. 
+---
+= Página limites de relacionamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página limites de relacionamento permite configurar os valores de aviso de atraso global e limite de erro para relacionamentos de proteção não gerenciados, para que você seja notificado e possa agir quando ocorrerem erros de atraso ou limite. As alterações a estas definições são aplicadas durante a próxima atualização agendada.
+
+Tem de ter a função Administrador de aplicações ou Administrador de armazenamento.
+
+Os eventos são gerados quando um limite é violado para volumes ou VMs de storage. Você pode tomar ações corretivas para tais eventos. Os eventos agora são criados para relacionamentos de VM de armazenamento, mas bloqueados para relacionamentos constituintes dentro da configuração de recuperação de desastres da VM de armazenamento. Isso ajuda a evitar que muitos eventos sejam criados para um relacionamento. As configurações de limite de atraso para relacionamentos não gerenciados são ativadas por padrão e também são fornecidas para VMs de armazenamento.
+
+O limite de atraso especifica uma porcentagem que o tempo de atraso não deve exceder. Usando um exemplo de uma hora, se o limite de atraso for definido como 150%, você receberá um evento quando o tempo de atraso for superior a 1,5 horas.
+
+
+
+== Limites de atraso para a área relacionamentos não gerenciados
+
+A área de atraso permite definir limites de atraso de relacionamento não gerenciados para as seguintes condições:
+
+* *Aviso*
++
+Especifica a porcentagem em que a duração do atraso é igual ou superior ao limite de aviso de atraso:
+
++
+** Valor padrão: 150 por cento
+** Eventos gerados: Aviso de atraso de relação do SnapMirror ou Aviso de atraso de relação do SnapVault
+** Gravidade do evento: Aviso
+
+
+* *Erro*
++
+Especifica a porcentagem em que a duração do atraso é igual ou superior ao limite de erro de atraso:
+
++
+** Valor padrão: 250 por cento
+** Eventos gerados: Erro de atraso de relação do SnapMirror ou erro de atraso de relação do SnapVault
+** Gravidade do evento: Erro
+
+
+
+
+Além disso, você pode desativar um evento de aviso ou erro de ser acionado a partir de qualquer valor limite de atraso, desmarcando a caixa ao lado de ativado.

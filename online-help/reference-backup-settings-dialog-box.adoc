@@ -1,0 +1,83 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Configurações de backup é usada para configurar configurações para backup instantâneo do MySQL e do NetApp. Dependendo do backup configurado, os campos relacionados aparecem na caixa de diálogo Configurações de backup. Para um backup de banco de dados MySQL, você pode definir o agendamento de backup, a contagem de retenção e o caminho de backup para uma instância do Active IQ Unified Manager selecionada. 
+---
+= Caixa de diálogo Configurações de backup
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Configurações de backup é usada para configurar configurações para backup instantâneo do MySQL e do NetApp. Dependendo do backup configurado, os campos relacionados aparecem na caixa de diálogo Configurações de backup. Para um backup de banco de dados MySQL, você pode definir o agendamento de backup, a contagem de retenção e o caminho de backup para uma instância do Active IQ Unified Manager selecionada.
+
+Pode alterar as seguintes definições de cópia de segurança da base de dados:
+
+* *CLUSTER*
++
+Você deve fornecer o IP de gerenciamento de cluster do sistema de storage em que os dados do Unified Manager serão hospedados.
+
+* *VOLUME*
++
+Você deve fornecer o nome do volume que contém o LUN dedicado para hospedar dados do Unified Manager.
+
+* *VM DE ARMAZENAMENTO*
++
+Você deve fornecer o nome da VM de storage em que o volume está localizado, contendo o LUN dedicado para hospedar dados do Unified Manager.
+
+* *LUN*
++
+Você deve fornecer o nome do LUN em que os dados do Gerenciador Unificado são hospedados quando o backup é do tipo NetApp Snapshot.
+
+* *CAMINHO DE MONTAGEM*
++
+Quando você estiver usando o método de backup de despejo de banco de dados MySQL, este campo especifica o caminho para o local onde você armazena os arquivos de backup. Ao usar o método de backup instantâneo, esse local mostra o cluster, a VM de armazenamento e o volume no qual o backup será armazenado.
+
++
+A tabela a seguir especifica o formato do caminho de backup e os locais padrão para diferentes sistemas operacionais:
+
++
+[cols="2*"]
+|===
+| Sistema operacional de host | Formato do caminho de cópia de segurança 
+
+
+ a| 
+Dispositivo virtual
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux ou CentOS Linux
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+No caso do Windows, você precisará fornecer o caminho de montagem. Por exemplo, se o caminho de montagem for a unidade "D", então você deve fornecer o caminho de montagem como `D:`
+
+|===
+* *CONTAGEM DE RETENÇÃO*
++
+Especifica o número máximo de backups a serem retidos pelo Unified Manager. O valor padrão é 10.
+
+* *Programado diariamente*
++
+Especifica a programação diária de backup com a hora.
+
+* *Programado semanalmente*
++
+Especifica a programação semanal de backup com o dia e a hora.
+
+* *Nenhuma*
++
+Especifica que nenhum backup será criado.
+
+

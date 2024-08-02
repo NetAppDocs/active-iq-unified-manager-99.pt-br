@@ -1,0 +1,14 @@
+---
+permalink: reporting/concept-customizing-volume-capacity-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Esses relatórios personalizados de amostra são usados para ajudá-lo a identificar e responder a possíveis problemas relacionados à capacidade de volume e desempenho. 
+---
+= Personalizar relatórios de capacidade de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Esses relatórios personalizados de amostra são usados para ajudá-lo a identificar e responder a possíveis problemas relacionados à capacidade de volume e desempenho.

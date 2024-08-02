@@ -1,0 +1,36 @@
+---
+permalink: install-vapp/task-downloading-the-unified-manager-ova-file.html 
+sidebar: sidebar 
+keywords:  
+summary: Faça download do arquivo de instalação do Unified Manager no site de suporte da NetApp para implantar o Unified Manager como um dispositivo virtual. 
+---
+= Download do arquivo de instalação do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Faça download do arquivo de instalação do Unified Manager no site de suporte da NetApp para implantar o Unified Manager como um dispositivo virtual.
+
+
+
+== Antes de começar
+
+Você deve ter as credenciais de login para o site de suporte da NetApp.
+
+
+
+== Sobre esta tarefa
+
+O arquivo de instalação é um `OVA` arquivo que contém o software Unified Manager configurado em um dispositivo virtual.
+
+
+
+== Passos
+
+. Faça login no site de suporte da NetApp e navegue até a página *Download* do Gerenciador Unificado: https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["Site de suporte da NetApp"]
+. Selecione a versão necessária do Unified Manager e aceite o contrato de licença de usuários finais (EULA).
+. Baixe e salve o `OVA` arquivo para instalação do VMware vSphere em um diretório local ou diretório de rede acessível ao cliente vSphere.
+. Verifique a soma de verificação para garantir que o software foi transferido corretamente.
+

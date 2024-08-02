@@ -1,0 +1,159 @@
+---
+permalink: online-help/reference-volume-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na capacidade: Todos os volumes são exibidos e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= Campos de capacidade de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na capacidade: Todos os volumes são exibidos e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Volume*
++
+O nome do volume.
+
+* *Taxa diária de crescimento %*
++
+A taxa de crescimento que ocorre a cada 24 horas no volume.
+
+* *Dias completos*
++
+O número estimado de dias restantes antes do volume atingir a capacidade total.
+
+* *Dados disponíveis %*
++
+A capacidade de dados disponível em um volume como porcentagem.
+
+* *Capacidade de dados disponível*
++
+A capacidade de dados disponível em um volume.
+
+* *Dados usados %*
++
+Os dados usados em um volume como uma porcentagem.
+
+* * Capacidade de dados usados*
++
+A capacidade de dados usada em um volume.
+
+* *Capacidade total de dados*
++
+A capacidade total de dados (usada mais disponível) em um volume.
+
+* *Espaço lógico utilizado*
++
+O espaço lógico usado pelos dados nesse volume sem aplicar a economia com o uso das tecnologias de eficiência de storage da ONTAP.
+
+* *Snapshot Overflow %*
++
+Porcentagem do espaço de dados consumido pelas cópias Snapshot.
+
+* *Reserva de snapshot disponível %*
++
+Quantidade de espaço disponível para cópias Snapshot no volume como porcentagem.
+
+* *Reserva de snapshot com capacidade disponível*
++
+A quantidade de espaço disponível para cópias Snapshot no volume.
+
+* *Reserva Snapshot utilizada %*
++
+A quantidade de espaço usada pelas cópias Snapshot no volume como porcentagem.
+
+* *Reserva de snapshot capacidade utilizada*
++
+A quantidade de espaço usada pelas cópias Snapshot no volume.
+
+* *Capacidade total de reserva de instantâneo*
++
+Exibe a capacidade total de cópia Snapshot no volume.
+
+* * Quota de capacidade comprometida*
++
+O espaço reservado para cotas no volume.
+
+* * Quota de capacidade sobrecomprometida*
++
+A quantidade de espaço que pode ser usada para cotas antes que o sistema gere o evento de excesso de cota de volume.
+
+* *Número total de inodes*
++
+O número de inodes no volume.
+
+* * Utilização de inode %*
++
+A porcentagem de espaço de inode usado no volume.
+
+* *Thin Provisioning*
++
+Se a garantia de espaço está definida para o volume selecionado. Os valores válidos são Sim e não
+
+* *Garantia de espaço*
++
+A opção de garantia de armazenamento associada ao volume.
+
+* *Autowore*
++
+Se o volume cresce automaticamente em tamanho quando está fora do espaço.
+
+* *Snapshot Autodelete*
++
+Se a exclusão automática de cópias Snapshot está ativada ou desativada.
+
+* *Desduplicação*
++
+Se a deduplicação está ativada ou desativada para o volume.
+
+* *Compressão*
++
+Se a compressão está ativada ou desativada para o volume.
+
+* *Estado*
++
+O estado do volume que está a ser exportado.
+
+* *Função de proteção*
++
+A função de proteção definida para o volume.
+
+* *Tipo SnapLock*
++
+Se o volume é um volume SnapLock ou não SnapLock.
+
+* *Data de expiração do SnapLock*
++
+A data de expiração do SnapLock.
+
+* *Política de disposição em camadas*
++
+A política de disposição em camadas definida para o volume. Válido somente quando implantado em agregados habilitados para FabricPool.
+
+* *Política de Cache*
++
+A política de armazenamento em cache associada ao volume selecionado.
+
++
+A política fornece informações sobre como o armazenamento em cache do Flash Pool ocorre para o volume. Consulte a visualização integridade: Todos os volumes para obter mais informações sobre políticas de armazenamento em cache.
+
+* *Prioridade de retenção de cache*
++
+A prioridade usada para reter pools em cache.
+
+* *Storage VM*
++
+O nome da máquina virtual de storage (SVM) que contém o volume.
+
+* *Cluster*
++
+O nome do cluster no qual o volume reside. Você pode clicar no nome do cluster para navegar até a página de detalhes de integridade desse cluster.
+
+* *Cluster FQDN*
++
+O nome de domínio totalmente qualificado (FQDN) do cluster.
+
+

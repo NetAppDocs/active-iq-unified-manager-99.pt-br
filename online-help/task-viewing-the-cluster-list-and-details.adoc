@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-the-cluster-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode usar a visualização integridade: Todos os clusters para visualizar o inventário de clusters. A visualização capacidade: Todos os clusters permite visualizar informações resumidas sobre capacidade de storage e utilização em todos os clusters.' 
+---
+= Visualizar a lista de cluster e os detalhes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a visualização integridade: Todos os clusters para visualizar o inventário de clusters. A visualização capacidade: Todos os clusters permite visualizar informações resumidas sobre capacidade de storage e utilização em todos os clusters.
+
+
+
+== Antes de começar
+
+Tem de ter a função Operador, Administrador de aplicações ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você também pode exibir detalhes de clusters individuais, como a integridade do cluster, capacidade, configuração, LIFs, nós e discos nesse cluster usando a página de detalhes de cluster / integridade.
+
+Os detalhes na exibição integridade: Todos os clusters, capacidade: Todos os clusters e a página de detalhes de cluster / integridade ajudam a Planejar seu storage. Por exemplo, antes de provisionar um novo agregado, você pode selecionar um cluster específico na exibição integridade: Todos os clusters e obter detalhes de capacidade para determinar se o cluster tem o espaço necessário.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Storage* > *clusters*.
+. No menu *Exibir*, selecione *Saúde: Todos os clusters* para exibir informações de integridade ou *capacidade: Todos os clusters* para exibir detalhes sobre capacidade de armazenamento e utilização em todos os clusters.
+. Clique no nome de um cluster para ver os detalhes completos do cluster na página de detalhes *Cluster / Health*.
+

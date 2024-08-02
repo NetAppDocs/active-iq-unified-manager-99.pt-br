@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-svm-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na exibição desempenho: Todas as VMs de armazenamento e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= Campos de performance da VM de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na exibição desempenho: Todas as VMs de armazenamento e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Status*
++
+Um objeto saudável sem eventos ativos exibe um ícone de marca de seleção verde (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]). Se o objeto tiver um evento ativo, o ícone do indicador de evento identifica a gravidade do evento: Os eventos críticos são vermelhos (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"]), os eventos de erro são laranja (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ) e os eventos de aviso são amarelos (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"]).
+
+* *Storage VM*
++
+Você pode clicar no nome do SVM para navegar até a página de detalhes de performance do SVM.
+
+* *Latência*
++
+O tempo médio de resposta para todas as solicitações de e/S, expresso em milissegundos por operação.
+
+* *IOPS*
++
+As operações de entrada/saída por segundo para o SVM.
+
+* *MB/s*
++
+A taxa de transferência na SVM, medida em megabytes por segundo.
+
+* * Capacidade livre*
++
+Capacidade de storage não utilizada do SVM, em gigabytes.
+
+* * Capacidade total*
++
+Capacidade de storage total do SVM, em gigabytes.
+
+* *Cluster*
++
+O cluster ao qual o SVM pertence. Você pode clicar no nome do cluster para navegar até a página de detalhes do cluster.
+
+* *Cluster FQDN*
++
+O nome de domínio totalmente qualificado (FQDN) do cluster.
+
+* *Política de limite*
++
+A política de limite de performance definida pelo usuário, ou políticas, que estão ativas neste objeto de storage. Você pode posicionar o cursor sobre os nomes de políticas que contêm uma elipse (...) para exibir o nome completo da política ou a lista de nomes de políticas atribuídos. Os botões *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* permanecem desativados até selecionar um ou mais objetos clicando nas caixas de seleção localizadas à esquerda.
+
+

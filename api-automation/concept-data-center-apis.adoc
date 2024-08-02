@@ -1,0 +1,197 @@
+---
+permalink: api-automation/concept-data-center-apis.html 
+sidebar: sidebar 
+keywords:  
+summary: As APIS REST na categoria de data center permitem gerenciar objetos de storage em seu data center, como clusters, nós, agregados, VMs de storage, volumes, LUNs, compartilhamentos de arquivos e namespaces. Essas APIs estão disponíveis para consultar a configuração dos objetos, enquanto algumas delas permitem que você execute as operações de adição, exclusão ou modificação desses objetos. 
+---
+= Gerenciamento de objetos de storage em um data center
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As APIs REST `datacenter` na categoria permitem gerenciar objetos de storage em seu data center, como clusters, nós, agregados, VMs de storage, volumes, LUNs, compartilhamentos de arquivos e namespaces. Essas APIs estão disponíveis para consultar a configuração dos objetos, enquanto algumas delas permitem que você execute as operações de adição, exclusão ou modificação desses objetos.
+
+A maioria dessas APIs são chamadas que fornecem agregação entre clusters com suporte a filtragem, classificação e paginação. Ao executar essas APIs, elas retornam dados do banco de dados. Portanto, os recém-criados-objetos precisam ser descobertos pelo próximo ciclo de aquisição para aparecer na resposta.
+
+Se você quiser consultar os detalhes de um objeto específico, você precisa inserir o ID exclusivo desse objeto para visualizar seus detalhes. Por exemplo,
+
+[listing]
+----
+curl -X GET "https://<hostname>/api/datacenter/cluster/clusters/4c6bf721-2e3f-11e9-a3e2-00a0985badbb" -H "accept: application/json" -H "Authorization: Basic <Base64EncodedCredentials>"
+----
+[NOTE]
+====
+Os comandos CURL, exemplos, solicitações e respostas às APIs estão disponíveis na interface da API Swagger. Você pode filtrar e encomendar os resultados por parâmetros específicos, como indicado no Swagger. Essas APIs permitem filtrar os resultados para objetos de storage específicos, como cluster, volume ou VM de storage.
+
+====
+[cols="3*"]
+|===
+| Verbo HTTP | Caminho | Descrição 
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/cluster/clusters`
+
+`+/datacenter/cluster/clusters/{key}+`
+ a| 
+Use esse método para visualizar os detalhes dos clusters do ONTAP no data center. A API retorna informações, como o endereço IPv4 ou IPv6 do cluster, informações sobre o nó, como integridade do nó, capacidade de desempenho e par de alta disponibilidade (HA), e indica se o cluster é All SAN Array.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/cluster/nodes`
+
+`+/datacenter/cluster/nodes/{key}+`
+ a| 
+Você pode usar esse método para exibir os detalhes dos nós no data center. É possível exibir informações sobre o cluster, a integridade do nó, a capacidade de performance e o par de alta disponibilidade (HA) para o nó.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/protocols/cifs/shares`
+
+`+/datacenter/protocols/cifs/shares/{key}+`
+ a| 
+Você pode usar esse método para visualizar os detalhes dos compartilhamentos CIFS no data center. Além dos detalhes do cluster, SVM e volume, as informações sobre a ACL (Access Control List) também são retornadas.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/protocols/nfs/export-policies`
+
+`+/datacenter/protocols/nfs/export-policies/{key}+`
+ a| 
+Você pode usar esse método para exibir os detalhes das políticas de exportação dos serviços NFS compatíveis.
+
+Você pode consultar as políticas de exportação de um cluster ou VM de storage e reutilizar a chave de política de exportação para provisionar compartilhamentos de arquivos NFS. Para obter mais informações sobre a atribuição e a reutilização de políticas de exportação em workloads, consulte "'Aprovisionamento de compartilhamentos de arquivos CIFS e NFS".
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/storage/aggregates`
+
+`+/datacenter/storage/aggregates/{key}+`
+ a| 
+Use esse método para visualizar a coleção de agregados no data center ou um agregado específico para provisionar workloads ou monitorar. As informações, como detalhes de cluster e nó, capacidade de performance usada, espaço disponível e usado, e eficiência de storage, são retornadas.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/storage/luns`
+
+`+/datacenter/storage/luns/{key}+`
+ a| 
+Você pode usar esse método para exibir a coleta de LUNs em todo o data center. Você pode exibir informações sobre o LUN, como detalhes do cluster e SVM, políticas de QoS e grupos de pessoas.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/storage/qos/policies`
+
+`+/datacenter/storage/qos/policies/{key}+`
+ a| 
+Você pode usar esse método para exibir os detalhes de todas as políticas de QoS aplicáveis aos objetos de storage no data center. As informações, como os detalhes do cluster e do SVM, os detalhes da política fixa ou adaptável e o número de objetos aplicáveis a essa política, são retornadas.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/storage/qtrees`
+
+`+/datacenter/storage/qtrees/{key}+`
+ a| 
+Use esse método para visualizar os detalhes de qtree no data center de todos os volumes do FlexVol ou volumes do FlexGroup. Informações, como os detalhes do cluster e da SVM, FlexVol volume e política de exportação, são retornadas.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/storage/volumes`
+
+`+/datacenter/storage/volumes/{key}+`
+ a| 
+Você pode usar esse método para exibir a coleta de volumes no data center. As informações sobre os volumes, como detalhes de SVM e cluster, QoS e políticas de exportação, se o volume é do tipo `read-write, data-protection, or load-sharing`, são retornadas.
+
+Para volumes FlexVol e FlexClone, é possível visualizar as informações sobre os respetivos agregados. Para um volume FlexGroup, a consulta retorna a lista de agregados constituintes.
+
+
+
+ a| 
+`GET`
+
+`POST`
+
+`DELETE`
+
+`PATCH`
+ a| 
+`/datacenter/protocols/san/igroups`
+
+`+/datacenter/protocols/san/igroups/{key}+`
+ a| 
+Você pode atribuir grupos de iniciadores (grupos de iniciadores) autorizados a acessar determinados destinos de LUN. Se houver um grupo existente, você pode atribuí-lo. Você também pode criar grupos e atribuí-los aos LUNs.
+
+Você pode usar esses métodos para consultar, criar, excluir e modificar grupos, respetivamente.
+
+Pontos a observar:
+
+* `POST`: Ao criar um grupo, você pode designar a VM de armazenamento na qual deseja atribuir acesso.
+* `DELETE`: Você precisa fornecer a chave do grupo como um parâmetro de entrada para excluir um determinado grupo. Se você já tiver atribuído um grupo a um LUN, não poderá excluir esse grupo.
+* `PATCH`: Você precisa fornecer a chave do grupo como um parâmetro de entrada para modificar um determinado grupo. Você também deve inserir a propriedade que deseja atualizar, juntamente com seu valor.
+
+
+
+
+ a| 
+`GET`
+
+`POST`
+
+`DELETE`
+
+`PATCH`
+ a| 
+`/datacenter/svm/svms`
+
+`+/datacenter/svm/svms/{key}+`
+ a| 
+Você pode usar esses métodos para exibir, criar, excluir e modificar máquinas virtuais de armazenamento (VMs de armazenamento).
+
+Pontos a observar:
+
+* `POST`: É necessário inserir o objeto de VM de armazenamento que deseja criar como parâmetro de entrada. Você pode criar uma VM de armazenamento personalizada e, em seguida, atribuir as propriedades necessárias a ela.
++
+[NOTE]
+====
+Se você tiver ativado o provisionamento de workload baseado em SLO no seu ambiente enquanto cria a VM de storage, garanta que ela seja compatível com todos os protocolos necessários para provisionamento de LUNs e compartilhamentos de arquivos neles, por exemplo, CIFS ou SMB, NFS, FCP e iSCSI. Os fluxos de trabalho de provisionamento podem falhar se a VM de storage não oferecer suporte aos serviços necessários. Recomenda-se que os serviços para os respetivos tipos de cargas de trabalho também estejam ativados na VM de storage.
+
+====
+* `DELETE`: Você precisa fornecer a chave de VM de armazenamento para excluir uma VM de armazenamento específica.
++
+[NOTE]
+====
+Se você ativou o provisionamento de workload baseado em SLO no seu ambiente, não poderá excluir essa VM de storage na qual as cargas de trabalho de storage foram provisionadas. Quando você exclui uma VM de armazenamento em que um servidor CIFS ou SMB foi configurado, essa API também exclui o servidor CIFS ou SMB, juntamente com a configuração local do ative Directory. No entanto, o nome do servidor CIFS ou SMB continua na configuração do ative Directory que você deve excluir manualmente do servidor do ative Directory.
+
+====
+* `PATCH`: Você precisa fornecer a chave de VM de armazenamento para modificar uma VM de armazenamento específica. Você também precisa inserir as propriedades que deseja atualizar, juntamente com seus valores.
+
+
+|===

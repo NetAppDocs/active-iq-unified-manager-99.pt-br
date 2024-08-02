@@ -1,0 +1,20 @@
+---
+permalink: online-help/reference-performance-qos-policy-groups-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A visualização grupos de políticas de QoS exibe os grupos de políticas de QoS disponíveis nos clusters que o Unified Manager está monitorando. Isso inclui políticas tradicionais de QoS, políticas de QoS adaptáveis e políticas de QoS atribuídas pelo uso de níveis de serviço de performance. 
+---
+= Desempenho: Exibição de grupos de diretiva QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A visualização grupos de políticas de QoS exibe os grupos de políticas de QoS disponíveis nos clusters que o Unified Manager está monitorando. Isso inclui políticas tradicionais de QoS, políticas de QoS adaptáveis e políticas de QoS atribuídas pelo uso de níveis de serviço de performance.
+
+Os controles ao longo da parte superior da página permitem selecionar uma exibição específica com base no tipo de política de QoS em que você está interessado, realizar pesquisas para localizar objetos específicos, criar e aplicar filtros para restringir a lista de dados exibidos, adicionar/remover/reordenar colunas na página e exportar os dados na página para um `.csv` arquivo ou `.pdf`.
+
+Depois de personalizar a página, você pode salvar os resultados como uma visualização personalizada e, em seguida, agendar um relatório desses dados para ser gerado e enviado por e-mail regularmente.
+
+xref:reference-qos-policy-group-fields.adoc[Campos de Grupo de políticas de QoS]Consulte para obter descrições de todos os campos nesta página.

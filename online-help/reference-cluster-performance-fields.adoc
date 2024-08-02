@@ -1,0 +1,70 @@
+---
+permalink: online-help/reference-cluster-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na exibição desempenho: Todos os clusters e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= Campos de desempenho do cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na exibição desempenho: Todos os clusters e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Status*
++
+Um objeto saudável sem eventos ativos exibe um ícone de marca de seleção verde (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]). Se o objeto tiver um evento ativo, o ícone do indicador de evento identifica a gravidade do evento: Os eventos críticos são vermelhos (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"]), os eventos de erro são laranja (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ) e os eventos de aviso são amarelos (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"]).
+
+* *Cluster*
++
+O nome do cluster. Você pode clicar no nome do cluster para navegar até a página de detalhes de desempenho desse cluster.
+
+* *Cluster FQDN*
++
+O nome de domínio totalmente qualificado (FQDN) do cluster.
+
+* *IOPS*
++
+As operações de entrada/saída por segundo no cluster.
+
+* *MB/s*
++
+A taxa de transferência no cluster, medida em megabytes por segundo.
+
+* * Capacidade livre*
++
+A capacidade de armazenamento não utilizada para este cluster, em gigabytes.
+
+* * Capacidade total*
++
+A capacidade total de armazenamento para este cluster, em gigabytes.
+
+* *Contagem de nós*
++
+O número de nós no cluster. Você pode clicar no número para navegar até a exibição desempenho: Todos os nós.
+
+* *Nome do host ou endereço IP*
++
+O nome do host ou endereço IP (IPv4 ou IPv6) do LIF de gerenciamento de cluster.
+
+* *Número de série*
++
+O número de identificação exclusivo do cluster.
+
+* *Versão do SO*
++
+A versão do software ONTAP instalada no cluster.
+
++
+[NOTE]
+====
+Se forem instaladas versões diferentes do software ONTAP nos nós do cluster, o número de versão mais baixo será listado. É possível exibir a versão do ONTAP instalada em cada nó na exibição desempenho: Todos os nós.
+
+====
+* *Política de limite*
++
+A política de limite de performance definida pelo usuário, ou políticas, que estão ativas neste objeto de storage. Você pode posicionar o cursor sobre os nomes de políticas que contêm uma elipse (...) para exibir o nome completo da política ou a lista de nomes de políticas atribuídos. Os botões *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* permanecem desativados até selecionar um ou mais objetos clicando nas caixas de seleção localizadas à esquerda.
+
+

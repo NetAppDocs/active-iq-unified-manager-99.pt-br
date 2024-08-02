@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-nvme-namespace-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na visualização desempenho: Todos os namespaces NVMe e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= Campos de performance de namespace NVMe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na visualização desempenho: Todos os namespaces NVMe e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Subsistema*
++
+O subsistema do namespace.
+
+* *Status*
++
+Um objeto saudável sem eventos ativos exibe um ícone de marca de seleção verde (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]). Se o objeto tiver um evento ativo, o ícone do indicador de evento identifica a gravidade do evento: Os eventos críticos são vermelhos (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"]), os eventos de erro são laranja (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ) e os eventos de aviso são amarelos (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"]).
+
+* * Namespace*
++
+Você pode clicar no nome do namespace para navegar até a página de detalhes de desempenho desse namespace.
+
+* *Estado*
++
+O estado atual do namespace.
+
++
+** Offline - o acesso de leitura ou gravação ao namespace não é permitido.
+** On-line - o acesso de leitura e gravação ao namespace é permitido.
+** NVFail - o namespace foi automaticamente colocado offline devido a uma falha do NVRAM.
+** Erro de espaço - o namespace ficou sem espaço.
+
+
+* *Storage VM*
++
+A máquina virtual de storage (SVM) à qual o namespace pertence. Você pode clicar no nome do SVM para navegar até a página de detalhes do SVM.
+
+* *Cluster*
++
+O cluster ao qual o namespace pertence. Você pode clicar no nome do cluster para navegar até a página de detalhes do cluster.
+
+* *Cluster FQDN*
++
+O nome de domínio totalmente qualificado (FQDN) do cluster.
+
+* *Volume*
++
+O volume ao qual o namespace pertence. Pode clicar no nome do volume para navegar para a página de detalhes desse volume.
+
+* * Capacidade total*
++
+A capacidade total de armazenamento do namespace, em gigabytes.
+
+* * Capacidade livre*
++
+A capacidade de armazenamento não utilizada do namespace, em gigabytes.
+
+* *IOPS*
++
+As operações de entrada/saída por segundo para o namespace.
+
+* *Latência*
++
+O tempo médio de resposta para todas as solicitações de e/S no namespace, expresso em milissegundos por operação.
+
+* *MB/s*
++
+A taxa de transferência no namespace, medida em megabytes por segundo.
+
+* *Política de limite*
++
+A política de limite de performance definida pelo usuário, ou políticas, que estão ativas neste objeto de storage. Você pode posicionar o cursor sobre os nomes de políticas que contêm uma elipse (...) para exibir o nome completo da política ou a lista de nomes de políticas atribuídos. Os botões *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* permanecem desativados até selecionar um ou mais objetos clicando nas caixas de seleção localizadas à esquerda.
+
+

@@ -1,0 +1,124 @@
+---
+permalink: online-help/reference-node-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os campos a seguir estão disponíveis na exibição Saúde: Todos os nós e podem ser usados em visualizações personalizadas e em relatórios.' 
+---
+= Campos de integridade do nó
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os campos a seguir estão disponíveis na exibição Saúde: Todos os nós e podem ser usados em visualizações personalizadas e em relatórios.
+
+* *Status*
++
+Um ícone que identifica o status atual do nó. O status pode ser crítico (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"] ), erro (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ), Aviso (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"] ) ou normal (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]).
+
+* *Nó*
++
+O nome do nó. Você pode clicar no nome do nó para navegar até a página de detalhes do nó desse cluster.
+
+* *Estado*
++
+O estado do nó. O estado pode ser para cima ou para baixo.
+
+* *Estado HA*
++
+O estado do par de HA. O estado pode ser erro, Aviso, normal ou não aplicável.
+
+* *Tempo de inatividade*
++
+O tempo decorrido ou o carimbo de data/hora desde que o nó está offline. Se o tempo decorrido exceder uma semana, o carimbo de data/hora quando o nó ficou offline é exibido.
+
+* *Todos os flash otimizados*
++
+Se o nó é otimizado para dar suporte apenas a unidades de estado sólido (SSDs).
+
+* *Modelo/Família*
++
+O modelo do nó.
+
+* *Versão do SO*
++
+A versão do software ONTAP em que o nó está sendo executado.
+
+* *Número de série*
++
+O número de série do nó.
+
+* *Versão do firmware*
++
+O número da versão do firmware do nó.
+
+* *Capacidade usada agregada*
++
+A quantidade de espaço usada para dados nos agregados do nó.
+
+* *Capacidade total agregada*
++
+O espaço total disponível para dados nos agregados do nó.
+
+* * Capacidade extra utilizável*
++
+A quantidade de espaço disponível no nó que pode ser usada para aprimorar a capacidade agregada.
+
+* * Capacidade bruta utilizável*
++
+A quantidade de espaço utilizável no nó.
+
+* * Capacidade bruta total*
++
+A capacidade de cada disco não formatado no nó antes do dimensionamento correto e da configuração RAID.
+
+* *Contagem de VM de armazenamento*
++
+O número de SVMs contidas pelo cluster.
+
+* *Contagem de portas FC*
++
+O número de portas FC contido pelo nó.
+
+* *Contagem de portas FCoE*
++
+O número de portas FCoE contidas pelo nó.
+
+* *Contagem de portas Ethernet*
++
+O número de portas ethernet contidas pelo nó.
+
+* * Tamanho do cartão Flash*
++
+O tamanho das placas flash instaladas no nó.
+
+* * Contagem de cartões Flash*
++
+O número de cartões flash instalados no nó.
+
+* *Contagem de prateleiras de disco*
++
+O número de compartimentos de disco contido pelo nó.
+
+* *Contagem de discos*
++
+O número de discos no nó.
+
+* *Cluster*
++
+O nome do cluster ao qual o nó pertence. Você pode clicar no nome do cluster para navegar até a página de detalhes de integridade desse cluster.
+
+* *Cluster FQDN*
++
+O nome de domínio totalmente qualificado (FQDN) do cluster.
+
+* *Contato*
++
+As informações de Contato do nó.
+
+* *Localização*
++
+A localização do nó.
+
+

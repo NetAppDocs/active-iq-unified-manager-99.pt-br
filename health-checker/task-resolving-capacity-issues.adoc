@@ -1,0 +1,47 @@
+---
+permalink: health-checker/task-resolving-capacity-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: Este fluxo de trabalho fornece um exemplo de como você pode resolver um problema de capacidade. Nesse cenário, você é um administrador ou operador e acessa a página Painel do Unified Manager para ver se algum dos objetos de armazenamento monitorados tem problemas de capacidade. Você deseja determinar a possível causa e resolução do problema. 
+---
+= Resolução de problemas de capacidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este fluxo de trabalho fornece um exemplo de como você pode resolver um problema de capacidade. Nesse cenário, você é um administrador ou operador e acessa a página do Unified ManagerDashboard para ver se algum dos objetos de storage monitorados tem problemas de capacidade. Você deseja determinar a possível causa e resolução do problema.
+
+
+
+== Antes de começar
+
+Tem de ter a função Operador, Administrador de aplicações ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Na página Painel, você procura um evento de erro ""espaço de volume cheio"" no painel capacidade na lista suspensa eventos.
+
+
+
+== Passos
+
+. No painel *Capacity* da página *Dashboard*, clique no nome do evento de erro espaço em volume cheio.
++
+A página de detalhes do evento para o erro é exibida.
+
+. Na página de detalhes do *evento*, você pode executar uma ou mais das seguintes tarefas:
++
+** Reveja a mensagem de erro no campo causa e clique nas sugestões em ações corretivas sugeridas para rever as descrições de possíveis correções. xref:task-performing-suggested-remedial-actions-for-a-full-volume.adoc[Executar ações corretivas sugeridas para um volume total]
+** Clique no nome do objeto, neste caso um volume, no campo fonte para obter detalhes sobre o objeto. xref:reference-health-volume-details-page.adoc[Página de detalhes do volume]
+** Procure por notas que possam ter sido adicionadas sobre este evento. xref:task-adding-and-reviewing-notes-about-an-event.adoc[Adicionar e rever notas associadas a um evento]
+** Adicione uma nota ao evento. xref:task-adding-and-reviewing-notes-about-an-event.adoc[Adicionar e rever notas associadas a um evento]
+** Atribua o evento a outro usuário. xref:task-assigning-events-to-specific-users.adoc[Atribuindo eventos]
+** Confirme o evento. xref:task-acknowledging-and-resolving-events.adoc[Reconhecer e resolver eventos]
+** Marque o evento como resolvido. xref:task-acknowledging-and-resolving-events.adoc[Reconhecer e resolver eventos]
+
+
+
